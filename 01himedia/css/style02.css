@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*header*/
+
+div.utilwrap{border:1px solid #ccc;margin-bottom:10px;}
+div.util{width: 980px;margin: 0 auto;}
+
+ul.menu{margin-left:auto; width: 280px;}
+ul.menu li{float:left;position: relative;}
+ul.menu li:after{content:""; display: block; width: 1px;height: 10px;background-color: #ccc;position: absolute;top:10px;right:0px;}
+ul.menu li:first-child:before{content:"";display: block;width: 1px;height: 10px;background: #ccc;position: absolute;top:10px;left:0;}
+ul.menu li a{display: block;padding: 0 10px;line-height:30px;}
+
+/*main menu*/
+
+#header h1{text-align: center;margin-bottom:10px;}
+
+div.gnbwrap{background-color:#1d5da4;}
+div.gnbmenu{width: 980px;margin: 0 auto;}
+div.gnbmenu li{float:left;width:16.666%;box-sizing:border-box; border-right:1px solid #316faa}
+div.gnbmenu li:first-child{border-left: 1px solid #316faa;}
+div.gnbmenu li a{text-align: center;display: block;line-height:45px;color:white;font-weight:bold;}
+
+/*slid img*/
+
+div.visualwrap{height: 400px;background-image: url(../images/visual_bg.jpg);background-color: #223a6a; background-repeat: no-repeat;background-position: center;}
+div.visual{width: 980px;margin: 0 auto;position: relative;}
+div.visual img.img1{position: absolute;top:70px;left:10px;}
+div.visual img.img2{position: absolute; right:-50px;}
+
+/*sub menu1*/
+
+.section{background-color: #eee;/* margin-bottom:30px;*/}
+.banner{width: 980px;margin: 0 auto;}
+.banner li{float:left;width: 196px;}
+.banner li:nth-child(1){background-color:#7c99b9;}
+.banner li:nth-child(2){background-color:#4f74a1;}
+.banner li:nth-child(3){background-color:#4b8ce0;}
+.banner li:nth-child(4){background-color:#3db5f2;}
+.banner li:nth-child(5){background-color:#95c8ff;}
+.banner li a{text-align: center;display: block;color: white;height: 196px; padding:17px;}
+.banner p{font-size: 12px}
+.banner img{margin: 0 auto;}
+
+
+/*contwarpone*/
+
+.contwrapone{width: 980px;margin: 0 auto;}
+.content li{float:left;width: 310px;margin-right: 25px; cursor: pointer;}
+.content li:last-child{margin-right:0;}
+.content div.body{border:1px solid #ccc; border-top: 0 none;}
+.content div.body p{white-space:nowrap;text-overflow:ellipsis;overflow: hidden} /*넘치는 글을 간단하게 정리함*/
+
+
+/*contentwraptwo*/
+
+
+.contwraptwo{width: 980px;margin: 0 auto;}
+.contentwo li{float:left;width: 310px;margin-right: 25px; border: 1px solid #ddd;padding: 20px;}
+.contentwo li:last-child{margin-right:0;}
+.contentwo li:nth-child(1){background-image: url(../images/imgbg01.jpg);background-repeat:no-repeat;background-position: 140px 10px}
+.contentwo li:nth-child(2){background-image: url(../images/imgbg02.jpg);background-repeat:no-repeat;background-position: 120px 10px}
+.contentwo li:nth-child(3){background-image: url(../images/imgbg03.jpg);background-repeat:no-repeat;background-position: 130px 10px}
+.contentwo div.body{width: 150px;}
+.contentwo div.body a{color: blue;font-size:14px;}
+
+/*footer*/
+
+#footer{background-color: #5e5e5e;}
+.footertopwrap{background-color: #4d4d4d;}
+.footertop{width: 980px;margin: 0 auto;}
+.footertop li{float:left; position: relative;}
+.footertop li:after{content:"";display: block;background: white; width: 1px; height: 16px; position: absolute; top:13px; right:15px;}
+.footertop li:last-child:after{content:"";display:none;}
+.footertop li a{display: block;color:white;line-height:40px; padding: 0 30px 0 0;}
+
+.footerbottom{width: 980px;margin: 0 auto;color: white;}
+.footerbottom .logo{float:left;width: 200px; font-size:20px;font-weight: bold; color: white;}
+.footerbottom .copy{float:left;}
+
+/*margin-bottom*/
+
+.mb5{margin-bottom:5px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb15{margin-bottom: 15px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb30{margin-bottom: 30px !important;}
+
+.pa5{padding: 5px !important;}
+.pa10{padding: 10px !important;}
+.pa15{padding: 15px !important;}
+.pa20{padding: 20px !important;}
+
+.pt5{padding-top: 5px !important;}
+.pt10{padding-top: 10px !important;}
+.pt15{padding-top: 15px !important;}
+.pt20{padding-top: 20px !important;}
+
+.pb20{padding-bottom:20px !important;}
