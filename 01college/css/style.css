@@ -46,7 +46,7 @@
 .title .iconmenu{}
 .title .iconmenu ul{position: absolute;right:0;top:80px;}
 .title .iconmenu li{float: left;text-align: center;margin-left:20px;}
-.title .iconmenu li p{color: white;font-size:0.8em}
+.title .iconmenu li p{color: white;font-size:0.8em;font-weight:bold;}
 
 
 
@@ -54,18 +54,63 @@
 .container .slider li{position: relative;}
 .container .slider img{height: 450px;}
 .slider .sltxt{content:""; display: block; position: absolute; top:60px;left:70px;}
-.slider .sltxt p{font-size:4em;color: #1651b7;margin-bottom:20px;}
+.slider .sltxt p{font-size:4.2em;color: #1651b7;margin-bottom:15px;font-variant:small-caps;letter-spacing:-7px;}
 .slider .sltxt a{width: 168px;height: 40px;background: #192d4e;display: block;color:white;text-align: center;line-height:40px;font-weight:bold;}
 
-#contents .container{width: 1200px;margin: 0 auto;background: #fff;}
+#contents .container{width: 1200px;margin: 0 auto;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
-#contents .container>ul>li:nth-child(2n){background: pink;}
 #contents .container>ul>li:nth-child(1){width: 75%;height: 450px;}
 #contents .container>ul>li:nth-child(2){height: 450px;}
-#contents .container>ul>li:nth-child(3){}
-#contents .container>ul>li:nth-child(4){}
-#contents .container>ul>li:nth-child(5){}
+#contents .container>ul>li:nth-child(3){background: #00163b;}
+#contents .container>ul>li:nth-child(4){background: #1651b7;background-image: url(../images2/logoicon.png);background-repeat: no-repeat;background-position: 150px 60px}
+#contents .container>ul>li:nth-child(5){background: white;}
 #contents .container>ul>li:nth-child(6){}
 #contents .container>ul>li:nth-child(7){}
 #contents .container>ul>li:nth-child(8){width: 75%;}
 
+
+
+.bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:none;
+    background:none;}
+
+    .bx-wrapper .bx-pager{
+			bottom:30px;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0043ae;}
+
+/*block two*/
+
+.container{position: relative;}
+.blocktwo .bktwo{position: absolute;top:0;color: white;}
+.blocktwo .bktwo p:first-child{font-size:2.2em;margin:70px 0 10px 30px;}
+.blocktwo .bktwo p:nth-child(2){margin-left:30px;margin-bottom:30px;}
+.blocktwo .bktwo a{display: block;width:170px;height: 42px;background: rgba(0,0,0,0.4); color: white;font-weight: bold;border: 1px solid #fff; text-align: center;line-height:42px; margin-left:30px;}
+
+/*block three*/
+.siconmenu{}
+.siconmenu .sicon{}
+.siconmenu .sicon img{text-align: center;}
+.siconmenu .sicon li{float: left;width: 90px;}
+.siconmenu .sicon li:first-child{margin-left:30px;}
+.siconmenu .sicon p{text-align: center;font-size:0.8em;width: 60px;}
+.siconmenu p{color: white;}
+.siconmenu p:first-child{font-weight:bold; font-size:1.5em;margin-left:20px;margin-top: 25px;margin-bottom: 35px;}
+
+/*block four*/
+.ntwrap{color: white;padding: 20px;position: relative;overflow:hidden;}
+.ntwrap img{position: absolute;right:-30px;top:58px;}
+.ntwrap h3:after{content:"";display: block;background:white;width: 240px;height: 2px;margin-bottom:20px;margin-top: 20px;}
+.notice{position: relative;font-size:0.8em; font-weight:bold;margin-bottom:15px;}
+.notice a{color: white;}
+.nt p{position: absolute;right:0;top:0;}
+
+/*block five*/
+.newswrap{margin: 20px;position: relative;height: 200px;}
+.newswrap h3{margin-bottom:20px;}
+.news p{font-size:0.86em; margin-bottom:20px;}
+.news a{float: left;margin-right:15px;}
+.snsicon{position: absolute;right:10px;bottom:20px;}
