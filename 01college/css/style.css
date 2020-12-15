@@ -36,7 +36,7 @@
 	background-position:center; background-size:auto,cover; padding-bottom:30px;} 
 
 .title{position: relative;}
-.title .tt_txt{position: absolute;top:50px;}
+.title .tt_txt{position: absolute;top:80px;}
 .title .tt_txt p{color: white;}
 .title .tt_txt p:first-child{font-size:2.5em;}
 .title .tt_txt p:last-child{font-size:3.5em;}
@@ -45,8 +45,8 @@
 
 .title .iconmenu{}
 .title .iconmenu ul{position: absolute;right:0;top:80px;}
-.title .iconmenu li{float: left;width: 100px;}
-.title .iconmenu li p{color: white;}
+.title .iconmenu li{float: left;text-align: center;margin-left:20px;}
+.title .iconmenu li p{color: white;font-size:0.8em}
 
 
 
