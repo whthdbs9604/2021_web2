@@ -53,9 +53,10 @@
 
 .container .slider li{position: relative;}
 .container .slider img{height: 450px;}
-.slider .sltxt{content:""; display: block; position: absolute; top:60px;left:70px;}
+.slider .sltxt{content:""; display: block; position: absolute; top:60px;left:70px;height: 270px;}
 .slider .sltxt p{font-size:4.2em;color: #1651b7;margin-bottom:15px;font-variant:small-caps;letter-spacing:-7px;}
 .slider .sltxt a{width: 168px;height: 40px;background: #192d4e;display: block;color:white;text-align: center;line-height:40px;font-weight:bold;}
+
 
 #contents .container{width: 1200px;margin: 0 auto;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
