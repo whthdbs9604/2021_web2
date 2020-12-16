@@ -13,12 +13,27 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({
-				auto:true
+			var mySlider = $(".slider").bxSlider({
+				auto:true,controls:false,
 
 			});
+
+			$(".bt1").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".bt2").click(function(){
+				mySlider.goToprevSlide();
+			});
 		});
+
+		$(document).ready(function(){
+			$(".slider2").bxSlider({
+				auto:true,controls:false
+			});
+		});
+
 	</script>
+	
 </head>
 <body>
 	<header id="header">
@@ -103,6 +118,7 @@
 		<div class="container"> <!-- 1200m0a -->
 			<ul class="clearfix">
 				<li>
+					<div class="sliderwrap">
 					<ul class="slider">
 						<li>
 							<img src="images2/bg02.jpg" alt="">
@@ -147,9 +163,13 @@
 
 								<a href="#">자세히보기→</a>
 							</div>
-						</li>
-						
+						</li>												
 					</ul>
+					
+
+					<div class="bt1"><img src="images2/bt01.png" alt=""></div>
+					<div class="bt2"><img src="images2/bt02.png" alt=""></div>
+					</div>
 				</li>
 
 				<li>
@@ -248,10 +268,66 @@
 					</ul>
 				</li>
 
-				<li>06!</li>
-				<li>07</li>
+				<li>
+					<div class="hvimg">
+						<ul>
+						<img src="images2/school02.jpg" alt="">
+						<div class="hover">캠퍼스 투어</div>
+						</ul>
+					</div>
+				</li>
 
-				<li>08</li>
+				<li>
+					<div class="vdwrap">
+					<div class="video1">
+						<img src="images2/school03.jpg" alt="">
+					</div>
+					<div class="video2">
+						<a href="#"><img src="images2/playicon.png" alt=""></a>						
+					</div>
+					</div>
+				</li>
+
+				<li class="sliderwraptwo">
+					<ul class="slider2">
+						<li>
+							<img src="images2/book.jpg" alt="">
+							<div class="st2">
+								<p>2017년 신·편입생2차 모집1</p>
+								<p><b>2017.7.1~7.10</b></p>
+
+								<a href="#">입학사전예약→</a>
+							</div>
+						</li>
+						<li>
+							<img src="images2/book.jpg" alt="">
+							<div class="st2">
+								<p>2017년 신·편입생2차 모집2</p>
+								<p><b>2017.7.1~7.10</b></p>
+
+								<a href="#">입학사전예약→</a>
+							</div>
+						</li>
+						<li>
+							<img src="images2/book.jpg" alt="">
+							<div class="st2">
+								<p>2017년 신·편입생2차 모집3</p>
+								<p><b>2017.7.1~7.10</b></p>
+
+								<a href="#">입학사전예약→</a>
+							</div>
+						</li>
+						<li>
+							<img src="images2/book.jpg" alt="">
+							<div class="st2">
+								<p>2017년 신·편입생2차 모집4</p>
+								<p><b>2017.7.1~7.10</b></p>
+
+								<a href="#">입학사전예약→</a>
+							</div>
+						</li>
+					</ul>
+				</li>
 				
 			</ul>
 		</div>

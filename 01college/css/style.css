@@ -57,6 +57,11 @@
 .slider .sltxt p{font-size:4.2em;color: #1651b7;margin-bottom:15px;font-variant:small-caps;letter-spacing:-7px;}
 .slider .sltxt a{width: 168px;height: 40px;background: #192d4e;display: block;color:white;text-align: center;line-height:40px;font-weight:bold;}
 
+.sliderwrap{position: relative;}
+.bt1,.bt2{position: absolute;top:50%;margin-top:-50px;cursor: pointer;}
+.bt1{right: 0px;}
+.bt2{left:0px;}
+
 
 #contents .container{width: 1200px;margin: 0 auto;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
@@ -78,10 +83,12 @@
     border:none;
     background:none;}
 
-    .bx-wrapper .bx-pager{
+    .sliderwrap .bx-wrapper .bx-pager{
 			bottom:30px;}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+	.sliderwrap .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #0043ae;}
+
+
 
 /*block two*/
 
@@ -115,3 +122,31 @@
 .news p{font-size:0.86em; margin-bottom:20px;}
 .news a{float: left;margin-right:15px;}
 .snsicon{position: absolute;right:10px;bottom:20px;}
+
+/*block six*/
+
+.hvimg{position: relative;}
+.hvimg .hover{position: absolute;background: rgba(0,0,0,0.7);width: 100%;height: 60px;bottom:4px;color: white; line-height:60px;padding-left:110px;opacity:0;transition:0.3s;}
+.hvimg ul:hover .hover{opacity:1;}
+
+
+/*block seven*/
+
+.vdwrap{position: relative;}
+.vdwrap .video2{position: absolute;top:90px;left:120px;}
+
+/*block 8*/
+.slider2{position: relative;}
+.slider2 .st2{position: absolute;top:0;margin:30px;}
+.slider2 .st2 p{color: #ff4f3f;}
+.slider2 .st2 p:first-child{font-size:2em;}
+.slider2 .st2 p:nth-child(2){font-size:4em;margin-bottom:15px;}
+.slider2 .st2 a{background:rgba(255,50,31,0.8);padding: 10px 30px;border: 1px solid #fff;color: white;font-weight: bold;}
+
+/*.slider2 */
+
+ .bx-wrapper .bx-pager.bx-default-pager a:hover,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a.active,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #ff4f3f;}
+
+.sliderwraptwo .bx-wrapper .bx-pager{top:0;margin-left:370px;}
+
