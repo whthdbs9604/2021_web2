@@ -85,7 +85,7 @@
 
     .sliderwrap .bx-wrapper .bx-pager{
 			bottom:30px;}
-	.sliderwrap .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+	.sliderwrap .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
     background: #0043ae;}
 
 
@@ -144,7 +144,7 @@
 .slider2 .st2 a{background:rgba(255,50,31,0.8);padding: 10px 30px;border: 1px solid #fff;color: white;font-weight: bold;}
 
 /*.slider2 */
- .bx-wrapper .bx-pager.bx-default-pager a:hover,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a.active,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a:focus {
+ .bx-wrapper .bx-pager.bx-default-pager a:hover,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #ff4f3f;}
 
 .sliderwraptwo .bx-wrapper .bx-pager{top:0;margin-left:370px;}
