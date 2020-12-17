@@ -5,7 +5,7 @@
 .utilmenuwrap{background-color: #0044af;}
 .utilmenu{width: 1200px;margin: 0 auto;}
 .utilmenu .left{float:left;}
-.utilmenu .right{float:right;}
+.utilmenu .right{float:right; margin: 0;}
 
 .utilmenu .left li{float: left; width: 120px; margin-right:5px;}
 .utilmenu .left li a{display: block;line-height:40px;text-align: center; background: #00163b; color: white;font-weight: bold;}
@@ -149,3 +149,14 @@
 
 .sliderwraptwo .bx-wrapper .bx-pager{top:0;margin-left:370px;}
 
+
+/*footer*/
+
+.footerwrap{width: 1200px;margin: 0 auto; padding-top:10px;}
+.footerwrap img{float:left;margin-top:10px;margin:30px 0;}
+.futil{}
+.footers{margin-left:300px;}
+.footers .futil{float:left;margin-bottom:10px;margin-right: 130px;}
+.footers .futil li{float: left;margin-right:40px;font-size:0.8em;position: relative;}
+.footers .futil li:before{content:"";display: block;width: 1px;height: 12px;background:gray; position: absolute;left:-20px;top:3px;}
+.footers .futil li:first-child:before{display: none;}
