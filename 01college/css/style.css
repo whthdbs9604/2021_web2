@@ -33,7 +33,7 @@
 
 /*contents*/
 #contents{background-image:url(../images2/patten.png),url(../images2/backg01.jpg);background-repeat:repeat,no-repeat;
-	background-position:center; background-size:auto,cover; padding-bottom:30px;} 
+	background-position:center; background-size:auto,cover; padding-bottom:30px;width: 100%;} 
 
 .title{position: relative;}
 .title .tt_txt{position: absolute;top:80px;}
@@ -93,31 +93,29 @@
 /*block two*/
 
 .container{position: relative;}
-.blocktwo .bktwo{position: absolute;top:0;color: white;}
-.blocktwo .bktwo p:first-child{font-size:2.2em;margin:70px 0 10px 30px;}
-.blocktwo .bktwo p:nth-child(2){margin-left:30px;margin-bottom:30px;}
-.blocktwo .bktwo a{display: block;width:170px;height: 42px;background: rgba(0,0,0,0.4); color: white;font-weight: bold;border: 1px solid #fff; text-align: center;line-height:42px; margin-left:30px;}
+.blocktwo{background-image: url(../images2/backg02.jpg);width: 300px;height: 450px;padding:70px 30px;}
+.blocktwo .bktwo{color: white;}
+.blocktwo .bktwo p:first-child{font-size:2.2em;}
+.blocktwo .bktwo p:nth-child(2){margin-bottom:30px;}
+.blocktwo .bktwo a{display: block;width:170px;height: 42px;background: rgba(0,0,0,0.4); color: white;font-weight: bold;border: 1px solid #fff; text-align: center;line-height:42px;}
 
 /*block three*/
-.siconmenu{}
-.siconmenu .sicon{}
-.siconmenu .sicon img{text-align: center;}
-.siconmenu .sicon li{float: left;width: 90px;}
-.siconmenu .sicon li:first-child{margin-left:30px;}
+.siconmenu{padding: 30px;}
+.siconmenu .sicon img{text-align: center;margin-top:30px;}
+.siconmenu .sicon li{float: left;width: 61px;margin-left:16px;}
 .siconmenu .sicon p{text-align: center;font-size:0.8em;width: 60px;}
 .siconmenu p{color: white;}
-.siconmenu p:first-child{font-weight:bold; font-size:1.5em;margin-left:20px;margin-top: 25px;margin-bottom: 35px;}
+.siconmenu p:first-child{font-weight:bold; font-size:1.5em;}
 
 /*block four*/
-.ntwrap{color: white;padding: 20px;position: relative;overflow:hidden;}
-.ntwrap img{position: absolute;right:-30px;top:58px;}
-.ntwrap h3:after{content:"";display: block;background:white;width: 240px;height: 2px;margin-bottom:20px;margin-top: 20px;}
-.notice{position: relative;font-size:0.8em; font-weight:bold;margin-bottom:15px;}
-.notice a{color: white;}
-.nt p{position: absolute;right:0;top:0;}
+.ntwrap{padding: 20px;color: white;}
+.ntwrap .firstch:before{content:"";display: block;background:white;width: 240px;height: 2px;margin-bottom:20px;margin-top: 20px;}
+.ntwrap li{font-size:0.8em; font-weight:bold;margin-bottom:15px;color: white;}
+.ntwrap li a{color: white;}
+.ntwrap span{float:right;}
 
 /*block five*/
-.newswrap{margin: 20px;position: relative;height: 200px;}
+.newswrap{margin: 20px;position: relative;height: 200px;overflow:hidden;}
 .newswrap h3{margin-bottom:20px;}
 .news p{font-size:0.86em; margin-bottom:20px;}
 .news a{float: left;margin-right:15px;}
@@ -126,8 +124,9 @@
 /*block six*/
 
 .hvimg{position: relative;}
-.hvimg .hover{position: absolute;background: rgba(0,0,0,0.7);width: 100%;height: 60px;bottom:4px;color: white; line-height:60px;padding-left:110px;opacity:0;transition:0.3s;}
-.hvimg ul:hover .hover{opacity:1;}
+.hvimg .hover{position: absolute;background: rgba(0,0,0,0.7);width: 100%;height: 60px;bottom:-60px;line-height:60px;padding-left:110px;transition:0.3s;}
+.hvimg .hover a{color: white;}
+.hvimg ul:hover .hover{bottom: 0px;transition:0.3s;}
 
 
 /*block seven*/
@@ -147,16 +146,17 @@
  .bx-wrapper .bx-pager.bx-default-pager a:hover,.sliderwraptwo .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #ff4f3f;}
 
-.sliderwraptwo .bx-wrapper .bx-pager{top:0;margin-left:370px;}
+.sliderwraptwo .bx-wrapper .bx-pager{top:0;right:0;width: 80px;margin-right:30px;}
 
 
 /*footer*/
 
-.footerwrap{width: 1200px;margin: 0 auto; padding-top:10px;}
+.footerwrap{width: 1200px;margin: 0 auto; padding-top:0px;}
 .footerwrap img{float:left;margin-top:10px;margin:30px 0;}
-.futil{}
-.footers{margin-left:300px;}
+.footers{margin-left:300px; margin-bottom:30px;}
 .footers .futil{float:left;margin-bottom:10px;margin-right: 130px;}
-.footers .futil li{float: left;margin-right:40px;font-size:0.8em;position: relative;}
+.footers .futil li{float: left;margin-right:40px;font-size:0.8em;position: relative;font-weight: bold;margin-top: 20px;}
 .footers .futil li:before{content:"";display: block;width: 1px;height: 12px;background:gray; position: absolute;left:-20px;top:3px;}
 .footers .futil li:first-child:before{display: none;}
+.footers span{font-size:0.8em;color:darkgray;}
+.footers p{font-size:0.8em;color: gray;}
