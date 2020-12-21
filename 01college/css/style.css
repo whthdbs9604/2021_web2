@@ -123,7 +123,7 @@
 
 /*block six*/
 
-.hvimg{position: relative;}
+.hvimg{position: relative; overflow:hidden;}
 .hvimg .hover{position: absolute;background: rgba(0,0,0,0.7);width: 100%;height: 60px;bottom:-60px;line-height:60px;padding-left:110px;transition:0.3s;}
 .hvimg .hover a{color: white;}
 .hvimg ul:hover .hover{bottom: 0px;transition:0.3s;}
