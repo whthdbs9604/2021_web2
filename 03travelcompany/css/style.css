@@ -1,1 +1,27 @@
 @charset "utf-8";
+
+/*header*/
+
+.bgimg{background:#0866a4;background-image: url(../image/04비행기.jpg);background-repeat: no-repeat;background-position:center;}
+.header1{margin: 0 auto;width: 980px;height: 90px;}
+.header1 img{margin-top:3px;}
+.header1 img:nth-child(3){position: absolute;right:10px;cursor: pointer;}
+.header1 a img{margin-top:20px;}
+.header1 .textin{}
+fieldset{border:1px solid white; background: white;width: 290px;height: 29px;margin: 0 auto;border-radius:29px;display: block;}
+fieldset input{border: 0 none;width: 130px;height: 23px;position: absolute;right: 70px;top:2px;}
+fieldset .textin{margin-left:10px;position: relative;}
+legend{display: block;position: absolute; left:0;top:-9999px;}
+
+
+/*manu*/
+
+.mainmenu{width: 980px;height: 60px;margin: 0 auto;}
+.mainmenu li{float: left;}
+
+/*body*/
+
+
+.body{background-image: url(../image/bg_dot.png),url(../image/01배경.jpg); background-repeat: repeat,no-repeat;background-size:auto,cover;width: 100%;}
+.fstbody{width: 980px;height: 610px;margin: 0 auto;}
+
