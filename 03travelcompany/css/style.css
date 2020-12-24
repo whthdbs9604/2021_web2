@@ -32,6 +32,23 @@
 /*body*/
 
 
-.body{background-image: url(../image/bg_dot.png),url(../image/01배경.jpg); background-repeat: repeat,no-repeat;background-size:auto,cover;width: 100%;}
-.fstbody{width: 980px;height: 610px;margin: 0 auto;}
+.body{background-image: url(../image/bg_dot.png),url(../image/01배경.jpg); background-repeat: repeat,no-repeat;background-size:auto,cover;width: 100%;padding-top: 56px;}
+.fstbody{width: 980px;height: 610px;margin: 0 auto;position: relative;}
+
+.imgwrap1{margin-top:20px;}
+.imgwrap1 li{float: left;}
+.imgwrap1 li:first-child{margin-right:16px;}
+.txt{position: absolute;right:70px;top:20px;}
+.txt h2{font-size:4.4em;color: #14252f;}
+.txt p{font-size: 1.8em;color: #14252f;}
+
+/*slider 1*/
+.slidwrap{width: 485px;height: 300px;background: pink;position: relative;}
+.slidwrap ul{background: blue;}
+.slidwrap form{width: 485px;height: 300px;}
+
+.slidwrap .slidertab{position: absolute;left:0;top:0px;width: 100%;}
+
+		.slidwrap .slidertab a{display: block;background: white;width:132px; height: 77.4px;line-height: 20px; text-align: center;font-size:1.5em; top:0;}
+		.slidwrap .slidertab a.active{background:blue;}
 

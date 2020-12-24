@@ -8,8 +8,19 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<script src="jquery-3.1.1.min.js"></script>
-	<script src="jquery.bx.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				controls:false,
+				mode:"vertical",
+				// pager:false,
+				pagerCustom:".slidertab"
+			});
+		});
+	</script>
 
 </head>
 <body>
@@ -45,11 +56,44 @@
 	<div class="body">
 		<section class="fstbody">
 		<div class="slidwrap">
-			<ul>
+			<ul class="slider">
 				<li>
-					
+					<div>
+					<form action="#" method="post">1</form>
+					</div>
+				</li>
+				<li>
+					<div>
+					<form action="#" method="post">2</form>
+					</div>
+				</li>
+				<li>
+					<div>
+					<form action="#" method="post">3</form>
+					</div>
+				</li>
+				<li>
+					<div>
+					<form action="#" method="post">4</form>
+					</div>
 				</li>
 			</ul>
+			<div class="slidertab">
+				<a href="#" data-slide-index="0"></a>
+				<a href="#" data-slide-index="1"></a>
+				<a href="#" data-slide-index="2"></a>
+				<a href="#" data-slide-index="3"></a>
+			</div>
+		</div>
+
+		<ul class="imgwrap1 clearfix">
+			<li><a href="#"><img src="image/03여행01.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/03여행02.jpg" alt=""></a></li>
+		</ul>
+
+		<div class="txt">
+			<h2>TRAVEL GO</h2>
+			<p>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
 		</div>
 		</section>
 	</div>
