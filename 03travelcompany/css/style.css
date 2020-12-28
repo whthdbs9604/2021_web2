@@ -119,14 +119,17 @@
 .box1{position: relative;overflow: hidden;}
 .box1 .bt{position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);transition:0.4s;}
 .box1  .bg{width: 100%;height: 100%;position: absolute;transition:0.4s;}
+.box1 .imgp{transition:0.4s;}
 .bgbc{background: rgba(0,0,0,0.3);}
 .bgg{background: rgba(19,160,101,0.3);}
 .bgbl{background: rgba(22,181,178,0.3);}
+
 
 .box a{}
 .box1:hover .top{top:0;}
 .box1:hover .bottom{bottom:0;}
 .box1:hover .bt{transform:translate(-50%,-50%) rotate(135deg)}
+.box1:hover .imgp{transform:translate(0,0) scale(1.2);}
 
 .top{top:-216px;}
 .bottom{bottom:-216px;}
