@@ -12,6 +12,7 @@
 	<script src="js/jquery.bxslider.js"></script>
 
 	<script>
+
 		$(document).ready(function(){
 			$(".slider").bxSlider({
 				controls:false,
@@ -21,21 +22,36 @@
 			});
 		});
 	
+
+
 		$(document).ready(function(){
-			$(".slider2").bxSlider({
-				controls:false,
-				pager:false
-				
+			var mySlider = $(".slider2").bxSlider({
+				auto:true,pager:false,
+
+			});
+
+			$(".bt1").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".bt2").click(function(){
+				mySlider.goToPrevSlide();
 			});
 		});
 	
 		$(document).ready(function(){
-			$(".slider3").bxSlider({
-				controls:false,
-				pager:false
-			
+			var mySlider = $(".slider3").bxSlider({
+				auto:true,pager:false,
+
+			});
+
+			$(".bt3").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".bt4").click(function(){
+				mySlider.goToPrevSlide();
 			});
 		});
+
 	</script>
 
 </head>
@@ -154,6 +170,10 @@
 					</div>
 				</li>
 			</ul>
+
+			<div class="bt1"><img src="image/button1.png" alt=""></div>
+			<div class="bt2"><img src="image/button2.png" alt=""></div>
+
 		</section>
 
 		<section class="sliderwrap3">
@@ -180,6 +200,10 @@
 					</div>
 				</li>
 			</ul>
+
+			<div class="bt3"><img src="image/button1.png" alt=""></div>
+			<div class="bt4"><img src="image/button2.png" alt=""></div>
+
 		</section>
 
 		<ul class="img5">
@@ -188,7 +212,7 @@
 			<div class="bbox5">
 				<span class="txt7">20℃</span>
 				<span class="txt8">구름조금</span>
-				<p>습도60%바람남남동2m/s</p>
+				<p>습도60% 바람 남남동 2m/s</p>
 			</div>
 		</ul>
 
@@ -208,10 +232,30 @@
 	</div>
 
 	<div class="body3 clearfix">
+		<div class="box1">
 		<a href="#"><img src="image/03여행07.jpg" alt=""></a>
+		<div class="bg top bgbl"></div>
+		<img src="image/button4.png" alt="" class="bt">
+		</div>
+
+		<div class="box1">
 		<a href="#"><img src="image/03여행08.jpg" alt=""></a>
+		<div class="bg bottom bgbc"></div>
+		<img src="image/button4.png" alt="" class="bt">
+		</div>
+
+		<div class="box1">
 		<a href="#"><img src="image/03여행09.jpg" alt=""></a>
-		<a href="#"><img src="image/03여행10.jpg" alt=""></a>
+		<div class="bg bottom bgbc"></div>
+		<img src="image/button4.png" alt="" class="bt">
+		</div>
+
+		<div class="box1 mr0">
+		<a href="#" ><img src="image/03여행10.jpg" alt=""></a>
+		<div class="bg top bgg"></div>
+		<img src="image/button4.png" alt="" class="bt">
+		</div>
+
 	</div>
 
 

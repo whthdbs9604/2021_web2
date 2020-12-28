@@ -59,7 +59,7 @@
 
 .sliderwrap{position: relative;}
 .bt1,.bt2{position: absolute;top:50%;margin-top:-50px;cursor: pointer;}
-.bt1{right: 0px;}
+.bt1{right: 0px;} 
 .bt2{left:0px;}
 
 

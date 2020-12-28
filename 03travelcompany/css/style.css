@@ -56,8 +56,8 @@
 
 .slidwrap .slidertab{position: absolute;left:0;top:0px;width: 100%;}
 
-		.slidwrap .slidertab a{display: block;background: white;width:132px; height: 75px;line-height: 20px; text-align: center;font-size:1.5em; top:0;}
-		.slidwrap .slidertab a.active{background:blue;}
+.slidwrap .slidertab a{display: block;background: white;width:132px; height: 75px;line-height: 20px; text-align: center;font-size:1.5em; top:0;}
+.slidwrap .slidertab a.active{background:blue;}
 
 	.bx-wrapper {
     -moz-box-shadow:none !important;
@@ -68,17 +68,23 @@
 
 /*slider2*/
 
-.sliderwrap2{width: 233px;float: left;}
+.sliderwrap2{width: 233px;float: left;position: relative;}
 .slider2 li{position: relative;}
 .bbox3{position: absolute;bottom:0;width: 233px;height: 65px;background: #529351;padding: 10px 20px;}
 .bbox3 p{margin-bottom:7px;color: white;}
 
+.bt1,.bt2{position: absolute; top:50px;cursor: pointer;}
+.bt1{right:0;}
+
+
 /*slider3*/
 
-.sliderwrap3{float:left;width: 233px;margin-left:16px;}
+.sliderwrap3{float:left;width: 233px;margin-left:16px;position: relative;}
 .bbox4{position: absolute;bottom:0;width: 233px;height: 65px;background: #152630;padding: 10px 20px;}
 .bbox4 p{margin-bottom:7px;color: white;}
 
+.bt3,.bt4{position: absolute; top:50px;cursor: pointer;}
+.bt3{right:0;}
 
 /*body2*/
 
@@ -86,6 +92,11 @@
 
 .img5, .img6{float: left; padding-left:16px;height: 216px;position: relative;}
 .img5 .txt6{position: absolute;top:10px;right:90px;color: white;font-weight: bold;}
+.img5{overflow: hidden;}
+.bbox5{transition:0.4s;}
+.img5:hover .bbox5{top:0;text-align: center;line-height:216px;font-size:1.5em;}
+
+.bbox5 p{color: #cfcfcf; font-size:0.8em;}
 .bbox5 .txt7{font-size:1.2em;color: white;}
 .bbox5 .txt8{color: white;}
 .bbox5{width: 233px;height: 216px;background: rgba(0,0,0,0.3);position: absolute;top:151px;padding: 7px 13px;}
@@ -102,5 +113,20 @@
 /*body3*/
 
 .body3{width: 980px;margin: 0 auto;}
-.body3 a{margin-right:16px; height: 216px;float: left;}
-.body3 a:last-child{margin-right:0;}
+.body3 .box1{margin-right:16px; height: 216px;float: left;}
+.mr0 {margin-right:0 !important;}
+
+.box1{position: relative;overflow: hidden;}
+.box1 .bt{position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);transition:0.4s;}
+.box1  .bg{width: 100%;height: 100%;position: absolute;transition:0.4s;}
+.bgbc{background: rgba(0,0,0,0.3);}
+.bgg{background: rgba(19,160,101,0.3);}
+.bgbl{background: rgba(22,181,178,0.3);}
+
+.box a{}
+.box1:hover .top{top:0;}
+.box1:hover .bottom{bottom:0;}
+.box1:hover .bt{transform:translate(-50%,-50%) rotate(135deg)}
+
+.top{top:-216px;}
+.bottom{bottom:-216px;}
