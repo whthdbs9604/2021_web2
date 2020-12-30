@@ -35,6 +35,14 @@
 .body{background-image: url(../image/bg_dot.png),url(../image/01배경.jpg); background-repeat: repeat,no-repeat;background-size:auto,cover;width: 100%;height: 1190px;padding-top: 56px;}
 .fstbody{width: 980px;margin: 0 auto;position: relative;}
 
+.bimg{position: absolute;top:150px;left:0px;
+				animation-name:bal1;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			animation-timing-function: ease;}
+			@keyframes bal1{ 0%{top:160px;} 100%{top:100px;}}
+
 .imgwrap1{margin-top:20px;margin-bottom:16px;}
 .imgwrap1 li{float: left;height: 216px;position: relative;}
 .imgwrap1 li:first-child{margin-right:16px;}
@@ -45,7 +53,7 @@
 .bbox1 .txt4{font-weight: bold;color: #6fc466;margin-left:20px;}
 
 
-.txt{position: absolute;right:70px;top:20px;}
+.txt{position: absolute;right:40px;top:20px;}
 .txt h2{font-size:4.4em;color: #14252f;}
 .txt p{font-size: 1.8em;color: #14252f;}
 
