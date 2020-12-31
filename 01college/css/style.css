@@ -131,8 +131,12 @@
 
 /*block seven*/
 
-.vdwrap{position: relative;}
+.vdwrap{position: relative;overflow: hidden;transition:2s;}
 .vdwrap .video2{position: absolute;top:90px;left:120px;}
+.video1 .cbimg{transition:0.3s;}
+.video1 .youtube{display: block;}
+
+.video1:hover .cbimg{transform:translate(0%,0%) scale(1.2);}
 
 /*block 8*/
 .slider2{position: relative;}
