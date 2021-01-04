@@ -35,13 +35,6 @@
 .body{background-image: url(../image/bg_dot.png),url(../image/01배경.jpg); background-repeat: repeat,no-repeat;background-size:auto,cover;width: 100%;height: 1190px;padding-top: 56px;}
 .fstbody{width: 980px;margin: 0 auto;position: relative;}
 
-.bimg{position: absolute;top:150px;left:0px;
-				animation-name:bal1;
-				animation-duration: 2.5s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-			animation-timing-function: ease;}
-			@keyframes bal1{ 0%{top:160px;} 100%{top:100px;}}
 
 .imgwrap1{margin-top:20px;margin-bottom:16px;}
 .imgwrap1 li{float: left;height: 216px;position: relative;}
@@ -53,9 +46,33 @@
 .bbox1 .txt4{font-weight: bold;color: #6fc466;margin-left:20px;}
 
 
-.txt{position: absolute;right:40px;top:20px;}
+.txt{position: absolute;right:40px;top:20px;z-index:2;}
 .txt h2{font-size:4.4em;color: #14252f;}
 .txt p{font-size: 1.8em;color: #14252f;}
+
+.bimg{position: absolute;top:150px;right:-150px;
+				animation-name:bal1;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			animation-timing-function: ease;}
+			@keyframes bal1{ 0%{top:160px;} 100%{top:100px;}}
+
+.bimg2{position: absolute;left:-250px;bottom:-200px;
+				animation-name:bal2;
+				animation-duration: 3.5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			animation-timing-function: ease;}
+			@keyframes bal2{ 0%{bottom:-200px;} 100%{bottom:-50px;}}
+
+.bimg3{position: absolute;right:-300px;bottom:0px;
+				animation-name:bal3;
+				animation-duration: 3.5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			animation-timing-function: ease;}
+			@keyframes bal3{ 0%{bottom:-50px;} 100%{bottom:0px;}}
 
 /*slider 1*/
 .slider{margin-left:132px;}
@@ -83,6 +100,10 @@
 		    box-shadow:none !important;
 		    border: 0 none !important;
 		    margin-bottom:0 !important;}
+
+
+
+
 
 /*form*/
 .formtab select{}
@@ -136,7 +157,7 @@
 
 /*body3*/
 
-.body3{width: 980px;margin: 0 auto; margin-bottom:20px;}
+.body3{width: 980px;margin: 0 auto; margin-bottom:20px;position: relative;}
 .body3 .box1{margin-right:16px; height: 216px;float: left;}
 .mr0 {margin-right:0 !important;}
 
@@ -175,5 +196,6 @@ footer p{font-size:0.8em;color: gray;}
 .pt2{padding-top: 110px;}
 .ml{margin-left:10px;}
 .mlt{margin-left:15px;}
+.zid{z-index:5;}
 
 
