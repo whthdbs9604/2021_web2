@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+header#miheader{}
+
+/*header top*/
+
+#headert{width: 1260px;background: pink; position: fixed;left: 50%;transform:translateX(-50%); top: 40px;z-index:1;}
+
+#headert>h1{float: left; background: skyblue;height: 50px;}
+#mimenu{float: right;}
+#mimenu li{float:left;height: 50px;}
+#mimenu li a{display: block;line-height:50px;padding: 0 30px;}
+.tgmenu{display: none;}
+
+/*slider*/
+
+.sliderwrap{height: 1005px;}
+/*.sliderwrap li img{width: 100%;}*/
+.sliderwrap li{height: 1005px; background: skyblue; background-repeat: no-repeat;background-position:center;background-size: cover;}
+.sliderwrap li.slider1st{background-image: url(../images/mainimg01.jpg);}
+.sliderwrap li.slider2st{background-image: url(../images/mainimg02.jpg);}
+.sliderwrap li.slider3st{background-image: url(../images/mainimg01.jpg);}
+.sliderwrap .slidertxt{position: absolute;width: 500px;left: 50%;margin-left:-250px; text-align: center; color: white;top: 30%;}
+.sliderwrap .slidertxt h3{font-size:2em;}
+.sliderwrap .slidertxt h3:after{content:""; display: block;width: 300px;height: 2px;background: #fff; margin: 10px auto;}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;\margin-bottom:0;}
+
+.sliderwrap .bx-wrapper .bx-pager{
+    bottom:100px;}
+
+/*content*/
+
+.content{width: 1260px;margin: 0 auto;}
+.content>ul>li{float: left;width: 25%;height: 315px;}
+.content>ul>li>a{color: white;}
+
+/*content layout*/
+
+/*.content li:nth-child(2n){background: skyblue;}*/
+.content li.ct1st{background: #92c1d5;}
+.content li.ct2st{}
+.content li.ct3st{width: 50%;}
+.content li.ct4st{background: #b8307c;}
+.content li.ct5st{background: #413d3e;}
+.content li.ct6st{width: 50%;}
+.content li.ct7st{height: 730px;}
+.content li.ct8st{width: 50%;}
+.content li.ct9st{background: #b8307c;}
+.content li.ct10st{background: #413d3e;;}
+.content li.ct11st{width: 50%;}
+
+/*content cell*/
+
+.content li.ct1st a,
+.content li.ct4st a,
+.content li.ct5st a,
+.content li.ct9st a,
+.content li.ct10st a{text-align: center;display: block;height: 100%; padding-top:85px;}
+
+.content li.ct1st img,
+.content li.ct4st img,
+.content li.ct5st img,
+.content li.ct9st img,
+.content li.ct10st img{display: block;margin: 0 auto;margin-bottom: 5px;}
+.content li.ct1st p{color: white;}
