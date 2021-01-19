@@ -1,16 +1,26 @@
 @charset "utf-8";
 
+html,body{height: 100%;} /*모바일에 중요*/
 header#miheader{}
 
 /*header top*/
 
-#headert{width: 100%; position: fixed;z-index:1;top:0;}
+#headert{width: 100%; position: fixed;z-index:1;top:0;z-index:99999;background: white;}
 
-#headert>h1{float: left; background: skyblue;height: 50px;}
-#mimenu{float: right;}
-#mimenu li{float:left;height: 50px;}
-#mimenu li a{display: block;line-height:50px;padding: 0 30px;}
-.tgmenu{display: none;}
+#headert>h1{float: left;height: 50px;margin-left:10px;line-height:50px;}
+#mimenu{background: aliceblue;position: fixed;top:0;left:-100%;width: 100%;height: 100%;}
+#mimenu ul{background: white;position: absolute;width: 100%;top: 50%;transform:translateY(-50%);}
+#mimenu li{float:none;height: 50px;}
+#mimenu li a{display: block;line-height:50px;text-align: center;}
+.tgmn{display: block; width: 40px;height: 40px;position: absolute;top:5px;right: 10px;}
+.tgmn div{width: 25px;height: 4px;background: orange;border-radius:2px;position: absolute;left: 7px;transition:0.3s;}
+.tgmn .bar1{top: 10px;}
+.tgmn .bar2{top: 18px;}
+.tgmn .bar3{bottom:10px;}
+
+.tgmn.change .bar1{transform:rotate(-45deg);top:18px;background:gold;}
+.tgmn.change .bar2{opacity:0;}
+.tgmn.change .bar3{transform:rotate(45deg);top:18px;background: gold;}
 
 /*slider*/
 

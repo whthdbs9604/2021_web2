@@ -10,7 +10,7 @@ header#miheader{position: relative;height: 1950px;margin-bottom: 100px;}
 #mimenu{float: right;}
 #mimenu li{float:left;height: 50px;}
 #mimenu li a{display: block;line-height:50px;padding: 0 30px;}
-.tgmenu{display: none;}
+.tgmenu{display: none; }
 
 /*slider*/
 
