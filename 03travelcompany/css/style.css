@@ -56,7 +56,7 @@
 				animation-iteration-count: infinite;
 				animation-direction: alternate;
 			animation-timing-function: ease;}
-			@keyframes bal1{ 0%{top:160px;} 100%{top:100px;}}
+			@keyframes bal1{ 0%{top:200px;} 100%{top:300px;}}
 
 .bimg2{position: absolute;left:-250px;bottom:-200px;
 				animation-name:bal2;
