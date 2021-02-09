@@ -1,0 +1,389 @@
+<html lang="ko"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>company</title>
+
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxSlider.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+
+			$(".slider").bxSlider({
+				controls:false,
+				pager:false,auto:true
+			});
+			$(".slider2nd").bxSlider({
+				controls:false,
+				pager:false
+			});
+
+			$(".tgmn").click(function(){
+				var toggle = $(".tgmn").attr("class");
+				console.log(toggle);
+				if(toggle == "tgmn"){
+					$(".tgmn").addClass("change");
+					$("#mimenu").stop().animate({left:0},300)
+				}else{
+					$(".tgmn").removeClass("change");
+					$("#mimenu").stop().animate({left:"-100%"},300)
+				}
+			});
+
+			$(window).resize(function(){
+				$(".tgmn").removeClass("change");
+				$("#mimenu").removeAttr("style");
+			});
+
+		});
+
+
+	</script>
+</head>
+<body>
+
+	<header id="miheader">
+		<div id="headert" class="clearfix">
+			<a href="#"><img src="img/mlogo.png" alt="" class="hlogo"></a>
+			<nav id="mimenu">
+				<ul>
+					<li class="touch"><a href="#">모나미 소개</a>
+						<ul class="submenu">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+					<li class="touch"><a href="#">모나미 제품</a>
+						<ul class="submenu">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+					<li class="touch"><a href="#">문구 박물관</a>
+						<ul class="submenu">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+					<li class="touch"><a href="#">NEWS &amp; VIDEO</a>
+						<ul class="submenu pl1">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+					<li class="touch"><a href="#">고객지원</a>
+						<ul class="submenu">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+					<li class="touch"><a href="#">기원 구매 및 맞춤개발</a>
+						<ul class="submenu pl2">
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+							<li><a href="#">submenu</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="tgmn">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+		<div class="sliderwrap">
+		<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 1005px;"><ul class="slider" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-2964px, 0px, 0px);"><li class="slider3st bx-clone" style="float: left; list-style: none; position: relative; width: 988px;" aria-hidden="true"> <!-- por -->
+				<!-- <img src="images/mainimg01.jpg" alt=""> -->
+				<div class="slidertxt">
+					<h3>모나미와 함께하는 추억</h3>
+					<p>지우고싶지않은 기록들이 있습니다.<br></p>
+					<p>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+				</div>
+			</li>
+			<li class="slider1st" style="float: left; list-style: none; position: relative; width: 988px;" aria-hidden="true"> <!-- por -->
+				<!-- <img src="images/mainimg01.jpg" alt=""> -->
+				<div class="slidertxt">
+					<h3>모나미와 함께하는 추억</h3>
+					<p>지우고싶지않은 기록들이 있습니다.<br></p>
+					<p>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+				</div>
+			</li>
+			<li class="slider2st" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 988px;"> <!-- por -->
+				<!-- <img src="images/mainimg01.jpg" alt=""> -->
+				<div class="slidertxt">
+					<h3>모나미와 함께하는 추억</h3>
+					<p>지우고싶지않은 기록들이 있습니다.<br></p>
+					<p>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+				</div>
+			</li>
+			<li class="slider3st" style="float: left; list-style: none; position: relative; width: 988px;" aria-hidden="false"> <!-- por -->
+				<!-- <img src="images/mainimg01.jpg" alt=""> -->
+				<div class="slidertxt">
+					<h3>모나미와 함께하는 추억</h3>
+					<p>지우고싶지않은 기록들이 있습니다.<br></p>
+					<p>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+				</div>
+			</li>
+
+		<li class="slider1st bx-clone" style="float: left; list-style: none; position: relative; width: 988px;" aria-hidden="true"> <!-- por -->
+				<!-- <img src="images/mainimg01.jpg" alt=""> -->
+				<div class="slidertxt">
+					<h3>모나미와 함께하는 추억</h3>
+					<p>지우고싶지않은 기록들이 있습니다.<br></p>
+					<p>모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+				</div>
+			</li></ul></div></div>
+
+	</div>
+
+	<div class="content">
+		<ul class="clearfix">
+			<li class="ct1st">
+				<a href="#">
+					<img src="img/icon01.png" alt="회사소개" class="icon">
+					<p>회사소개</p>
+				</a>
+			</li>
+
+			<li class="ct2st">
+				<a href="#">
+					<img src="img/play.jpg" alt="영상" class="bgimg">
+					<img src="img/icon02.png" alt="실행" class="play">
+				</a>
+			</li>
+
+			<li class="ct3st">
+
+				<div class="sliderwrap">
+					<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 315px;"><ul class="slider2nd" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-630px, 0px, 0px);"><li class="news clearfix bx-clone" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
+							<div class="left">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="right">
+								<img src="" alt="img">
+							</div>
+						</li>
+						<li class="news clearfix" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="false">
+							<div class="left">1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="right">
+								<img src="" alt="이미지 원래 없음">
+							</div>
+						</li>
+						<li class="news clearfix" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 630px;">
+							<div class="left">2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="right">
+								<img src="" alt="img">
+							</div>
+						</li>
+						<li class="news clearfix" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
+							<div class="left">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="right">
+								<img src="" alt="img">
+							</div>
+						</li>
+					<li class="news clearfix bx-clone" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
+							<div class="left">1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="right">
+								<img src="" alt="이미지 원래 없음">
+							</div>
+						</li></ul></div></div>
+					<h2>공지</h2>
+						<div class="btn clearfix">
+							<!-- <img src="images/btn01_01.jpg" alt="" class="prvbtn">
+							<img src="images/btn01_02.jpg" alt="" class="nxtbtn"> -->
+						</div>
+				</div>
+			</li>
+
+			<li class="ct4st">
+				<a href="#">
+					<img src="img/icon03.png" alt="문구박물관" class="icon">
+					<p>문구박물관</p>
+				</a>
+			</li>
+			<li class="ct5st">
+				<a href="#">
+					<img src="img/icon04.png" alt="뉴스" class="icon">
+					<p>뉴스</p>
+				</a>
+			</li>
+			<li class="ct6st">
+				<a href="#">
+				<img src="img/img01.jpg" alt="이미지">
+				<div class="txt">
+					<p>WATER BASED MARKER</p>
+					<h2>라이브컬러 6색 세트</h2>
+					<img src="img/flus.png" alt="flus" class="plus">
+				</div>
+				</a>
+			</li>
+			<li class="ct7st">
+				<a href="#">
+				<img src="img/img02-2.jpg" alt="이미지">
+				<div class="txt2 flus">
+					<p>WATER BASED MARKER</p>
+					<h2>라이브컬러 6색 세트</h2>
+					<img src="img/flus.png" alt="flus" class="plus">
+				</div>
+				</a>
+			</li>
+			<li class="ct8st">
+				<a href="#">
+				<img src="img/img08.jpg" alt="이미지">
+				<div class="txt">
+					<p>WATER BASED MARKER</p>
+					<h2>라이브컬러 6색 세트</h2>
+					<img src="img/flus.png" alt="flus" class="plus">
+				</div>
+				</a>
+			</li>
+			<li class="ct9st">
+				<a href="#">
+					<img src="img/icon05.png" alt="이벤트" class="icon">
+					<p>이벤트</p>
+				</a>
+			</li>
+			<li class="ct10st">
+				<a href="#">
+					<img src="img/icon06.png" alt="기업맞춤개발" class="icon">
+					<p>기업맞춤개발</p>
+				</a>
+			</li>
+			<li class="ct11st">
+				<a href="#">
+				<img src="img/img03.jpg" alt="이미지">
+				<div class="txt">
+					<p>WATER BASED MARKER</p>
+					<h2>라이브컬러 6색 세트</h2>
+					<img src="img/flus.png" alt="flus" class="plus">
+				</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	</header>
+
+	<div class="container">
+		<div class="section">
+			<h4>비전</h4>
+			<p>VISION 2021</p>
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="img/icon08.png" alt="icon08">
+						<div class="cardbd">
+							<h3>lorem</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, officiis.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="img/icon09.png" alt="icon09">
+						<div class="cardbd">
+							<h3>lorem</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, officiis.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="img/icon10.png" alt="icon10">
+						<div class="cardbd">
+							<h3>lorem</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, officiis.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="img/icon11.png" alt="icon11">
+						<div class="cardbd">
+							<h3>lorem</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, officiis.</p>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="bottomwrap">
+		<div class="snswrap">
+			<ul class="clearfix">
+				<li>
+					<div class="snsicon">
+					<img src="img/icon07.png" alt="icon7" class="icon07">
+					<h2>SNS</h2>
+					</div>
+				</li>
+				<li><a href="#"><img src="img/img05.jpg" alt="img5"></a></li>
+
+				<li class="color md"><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet fugiat eius, iusto harum a!</p></a></li>
+
+				<li><a href="#"><img src="img/img06.jpg" alt="img6"></a></li>
+
+				<li class="color"><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet fugiat eius, iusto harum a!</p></a></li>
+
+				<li><a href="#"><img src="img/img07.jpg" alt="img7"></a></li>
+
+				<li class="color"><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet fugiat eius, iusto harum a!</p></a></li>
+			</ul>
+		</div>
+		<div class="impo">
+			<ul class="clearfix">
+				<li>
+					<img src="" alt="">
+					<h1>lorem</h1>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<a href="#">자세히보기</a>
+				</li>
+				<li>
+					<img src="" alt="">
+					<h1>lorem</h1>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<a href="#">자세히보기</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+
+		<div class="footer">
+			<a href="#" class="ftlogo"><img src="img/mlogo.png" alt=""></a>
+			<ul class="clearfix">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">상담문의</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<div class="txt">
+				<p>(12345) 서울특별시 강남구 강남북로 1234 강남타워 22층 대표이사 : 홍길동</p>
+				<p>사업자등록번호 : 123-45-33456 통신판매업신고번호 : 제 2020-2020202호 개인정보 보호 책임자 : 홍길동 (admin@company.com)</p>
+				<p>COPYRIGHT (C) 2020 BY COMPANY ALL RIGHT RESERVED.</p>
+			</div>
+			</ul>
+		</div>
+
+	</footer>
+
+
+
+</body></html>
