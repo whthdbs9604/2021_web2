@@ -33,11 +33,13 @@ header#miheader{position: relative;height: 1950px;margin-bottom: 100px;}
 
 .slider2nd .right{background: #c40f38;}
 
-.bx-wrapper {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0 none;\margin-bottom:0;}
+
+    .bx-wrapper {
+        -moz-box-shadow: none;
+        -webkit-box-shadow:none;
+        box-shadow: none;
+        border: 0 none;
+    }
 
 .sliderwrap .bx-wrapper .bx-pager{
     bottom:100px;}
