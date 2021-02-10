@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+header#miheader{position: relative;height:50px;margin-bottom: 10px;}
+#headert{width: 1260px; position: fixed;left: 50%;transform:translateX(-50%);top: 0;z-index:2;}
+#headert .hlogo{margin-left:10px;margin-top:5px;}
+
+#topmnwrap{z-index:1;background: white;height: 50px;width: 100%;position: fixed;width: 100%;}
+
+#mimenu{float: right;height: 50px;}
+#mimenu li{float:left;height: 50px;position: relative;}
+#mimenu li a{height: 50px;display: block;}
+#mimenu li a:hover{color: #c40f38;}
+#mimenu>ul>li>a{line-height:50px;padding: 0 25px;}
+.tgmenu{display: none;}
+
+.submenu{position: absolute;width: 230px;top:43px; right:0; background:rgba(255,255,255,0.8);height: 201px;transition:.3s;overflow: hidden;}
+.submenu.a{left:-56px;height: 1px;}
+.submenu.b{left:-50px;height: 1px;}
+.submenu.c{left:-42px;height: 1px;}
+.submenu.d{left:-33px;height: 1px;}
+.submenu.e{left:-56px;height: 1px;}
+.submenu.f{left:-19px;height: 1px;}
+
+.submenu a{width: 220px;display: block;line-height:30px;transition:.3s;text-align: center;
+height: 100px;color: #6a6a6a;}
+#mimenu>ul>li:hover .submenu.a{height: 360px;}
+#mimenu>ul>li:hover .submenu.b{height: 310px;}
+#mimenu>ul>li:hover .submenu.c{height: 60px;}
+#mimenu>ul>li:hover .submenu.d{height: 120px;}
+#mimenu>ul>li:hover .submenu.e{height: 210px;}
+#mimenu>ul>li:hover .submenu.f{height: 120px;}
+.submenu li:first-child{margin-top:15px;}
+.pl20{padding-left:20px;}
+.pl30{padding-left:40px !important;}
+.p12{padding-left:12px;}
+.p5{padding-left: 5px;}
+
+.container{width: 100%;margin: 0 auto;}
+
+.conbox{width: 100%;height: 300px;background: pink;position: relative;padding:30px;}
+
+.subinmn{position: absolute;top:275px;left: 50%;transform:translateX(-50%);}
+.subinmn ul{width: 1058px;}
+.subinmn li{float: left;border: 1px solid rgb(224, 224, 224);border-left: 0 none;}
+.subinmn li a{display: block;width: 150px;height: 50px;text-align: center;line-height:50px;background: white;color: rgb(117, 117, 117);}
+.subinmn li:first-child{border-left: 1px solid rgb(224, 224, 224);}
+
+.contents{width: 1126px;margin: 0 auto;margin-top:40px;}
+.contents .subContent div{
+  height: 1000px;border: 1px solid rgb(224, 224, 224);
+}
+.contents .loc{padding:20px 0;}
+.contents .title{width: 100%;height: 150px;background: pink;text-align: center;line-height:150px;margin-bottom:20px; font-size:2em;}

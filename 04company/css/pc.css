@@ -3,17 +3,20 @@
 header#miheader{position: relative;height: 1950px;margin-bottom: 100px;}
 
 /*header top*/
-#headert{width: 1260px; position: fixed;left: 50%;transform:translateX(-50%); top: 40px;z-index:1;background: white;border-radius:10px}
+#headert{width: 1260px; position: fixed;left: 50%;transform:translateX(-50%);top: 0;z-index:2;}
 #headert .hlogo{margin-left:10px;margin-top:5px;}
+
+#topmnwrap{z-index:1;background: white;height: 50px;width: 100%;position: fixed;}
 
 #headert>h1{float: left;height: 50px;}
 #mimenu{float: right;height: 50px;}
 #mimenu li{float:left;height: 50px;position: relative;}
+#mimenu li a{height: 50px;display: block;}
 #mimenu li a:hover{color: #c40f38;}
 #mimenu>ul>li>a{line-height:50px;padding: 0 25px;}
 .tgmenu{display: none;}
 
-.submenu{position: absolute;width: 230px;top:43px; right:0; background:rgba(255,255,255,0.5);height: 201px;transition:.3s;overflow: hidden;}
+.submenu{position: absolute;width: 230px;top:43px; right:0; background:rgba(255,255,255,0.8);height: 201px;transition:.3s;overflow: hidden;}
 .submenu.a{left:-56px;height: 1px;}
 .submenu.b{left:-50px;height: 1px;}
 .submenu.c{left:-42px;height: 1px;}
@@ -23,7 +26,12 @@ header#miheader{position: relative;height: 1950px;margin-bottom: 100px;}
 
 .submenu a{width: 220px;display: block;line-height:30px;transition:.3s;text-align: center;
 height: 100px;}
-#mimenu>ul>li:hover .submenu{height: 210px;}
+#mimenu>ul>li:hover .submenu.a{height: 360px;}
+#mimenu>ul>li:hover .submenu.b{height: 310px;}
+#mimenu>ul>li:hover .submenu.c{height: 60px;}
+#mimenu>ul>li:hover .submenu.d{height: 120px;}
+#mimenu>ul>li:hover .submenu.e{height: 210px;}
+#mimenu>ul>li:hover .submenu.f{height: 120px;}
 .submenu li:first-child{margin-top:15px;}
 .pl20{padding-left:20px;}
 .pl30{padding-left:40px !important;}
@@ -191,5 +199,6 @@ height: 100px;}
 .footer li:after{content:"";display: block;height: 15px;width: 1px;background: #000;position: absolute;top:3px;left:-12px;}
 .footer li:first-child:after{content:"";display: none;}
 .footer li a{display: block;}
-.footer .ftlogo{float: left;width: 225px;height: 100px;background-image: url(../images2/logo.png);background-repeat: no-repeat;background-position: 10px 20px}
+.footer .ftlogo img{margin-top:20px;}
+.footer .ftlogo{float: left;width: 225px;height: 100px;background-image: url(../images2/logo.png);background-repeat: no-repeat;background-position: 10px 25px}
 .footer .txt{float: left;font-size:0.9em;color: #ccc;}
