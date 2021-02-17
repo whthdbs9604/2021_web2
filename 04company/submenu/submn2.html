@@ -4,81 +4,181 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>모나미제품</title>
+  <title>모나미 제품</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/substyle.css">
   <link rel="stylesheet" href="../css/jquery.bxslider.css">
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/jquery.bxslider.js"></script>
 
+  <script>
+    $(function(){
+      $(".subContent div").hide().eq(0).show();
+      $(".subinmn li").click(function(){
+        var i = $(this).index();
+        $(".subContent div").hide().eq(i).show();
+
+        if(i == 0){
+          $(".loc_dep2").html("펜");
+        }else if(i == 1){
+          $(".loc_dep2").html("마카");
+        }else if(i == 2){
+          $(".loc_dep2").html("형광펜");
+        }else if(i == 3){
+          $(".loc_dep2").html("미술용품");
+        }else if(i == 4){
+          $(".loc_dep2").html("기타");
+        }else if(i == 5){
+          $(".loc_dep2").html("카탈로그");
+        }
+        return false; //클릭시 위로 이동방지
+
+      });
+      $(".subinmn li,.subinmn ul li").click(function(){
+        var num = $(this).index();
+        $(".subinmn ul li,.subinmn ul li a").removeClass();
+        $(this).addClass("active");
+        $(".subinmn ul li a").eq(num).addClass("fontcolor");
+      });
+
+    });
+  </script>
+
+  <style>
+  .subinmn li a{width: 175px;}
+  .conbox{background-image: url(../img/testimg3.jpg);background-size: cover;background-position:top:-30px;}
+  </style>
+
 </head>
-
-<style>
- .miheader{background: green;}
-</style>
-
 <body>
 
   <header id="miheader">
-  <div id="headert" class="clearfix">
-    <a href="../index.html"><img src="../img/mlogo.png" alt="" class="hlogo"></a>
-    <nav id="mimenu">
-      <ul>
-        <li class="touch"><a href="submn1.html">모나미 소개</a>
-          <ul class="submenu a p12">
-            <li><a href="#">CEO메세지</a></li>
-            <li><a href="#">회사정보</a></li>
-            <li><a href="#">회사연혁</a></li>
-            <li><a href="#">투자정보</a></li>
-            <li><a href="#">CI</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">찾아오시는길</a></li>
-          </ul>
-        </li>
-        <li class="touch"><a href="submn2.html">모나미 제품</a>
-          <ul class="submenu b p12">
-            <li><a href="#">펜</a></li>
-            <li><a href="#">마카</a></li>
-            <li><a href="#">형광펜</a></li>
-            <li><a href="#">미술용품</a></li>
-            <li><a href="#">기타</a></li>
-            <li><a href="#">카탈로그</a></li>
-          </ul>
-        </li>
-        <li class="touch"><a href="submn3.html">문구 박물관</a>
-          <ul class="submenu c">
-            <li><a href="#">문구박물관</a></li>
-          </ul>
-        </li>
-        <li class="touch"><a href="submn4.html">NEWS &amp; VIDEO</a>
-          <ul class="submenu d p5">
-            <li><a href="#">보도자료</a></li>
-            <li><a href="#">동영상자료</a></li>
-          </ul>
-        </li>
-        <li class="touch"><a href="submn5.html">고객지원</a>
-          <ul class="submenu e p5">
-            <li><a href="#">질문</a></li>
-            <li><a href="#">문의하기</a></li>
-            <li><a href="#">이벤트</a></li>
-            <li><a href="#">패밀리샵</a></li>
-          </ul>
-        </li>
-        <li class="touch"><a href="submn6.html">기업 구매 및 맞춤개발</a>
-          <ul class="submenu f p12">
-            <li><a href="#">기업단체구매</a></li>
-            <li><a href="#">맞춤개발용품</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <div class="tgmn">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+  <div id="topmnwrap">
+    <div id="headert" class="clearfix">
+      <a href="../index.html"><img src="../img/mlogo.png" alt="" class="hlogo"></a>
+      <nav id="mimenu">
+        <ul>
+          <li class="touch"><a href="submn1.html">모나미 소개</a>
+            <ul class="submenu a p12">
+              <li><a href="#">CEO메세지</a></li>
+              <li><a href="#">회사정보</a></li>
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">투자정보</a></li>
+              <li><a href="#">CI</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li class="touch"><a href="submn2.html">모나미 제품</a>
+            <ul class="submenu b p12">
+              <li><a href="#">펜</a></li>
+              <li><a href="#">마카</a></li>
+              <li><a href="#">형광펜</a></li>
+              <li><a href="#">미술용품</a></li>
+              <li><a href="#">기타</a></li>
+              <li><a href="#">카탈로그</a></li>
+            </ul>
+          </li>
+          <li class="touch"><a href="submn3.html">문구 박물관</a>
+            <ul class="submenu c">
+              <li><a href="#">문구박물관</a></li>
+            </ul>
+          </li>
+          <li class="touch"><a href="submn4.html">NEWS &amp; VIDEO</a>
+            <ul class="submenu d p5">
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">동영상자료</a></li>
+            </ul>
+          </li>
+          <li class="touch"><a href="submn5.html">고객지원</a>
+            <ul class="submenu e p5">
+              <li><a href="#">질문</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">패밀리샵</a></li>
+            </ul>
+          </li>
+          <li class="touch"><a href="http://mpms.monami.com/promotion/">기업 구매 및 맞춤개발</a>
+            <ul class="submenu f p12">
+              <li><a href="http://mpms.monami.com/promotion/">기업단체구매</a></li>
+              <li><a href="#">맞춤개발용품</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="tgmn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </div>
   </div>
-  서브2
 </header>
+
+
+<div class="container">
+  <div class="conbox">
+
+      <div class="imgbox"><h2>모나미 <span>제품</span></h2></div>
+
+    <div class="subinmn">
+      <ul class="clearfix">
+        <li class="active"><a href="#" class="fontcolor">펜</a></li>
+        <li ><a href="#">마카</a></li>
+        <li><a href="#">형광펜</a></li>
+        <li><a href="#">미술용품</a></li>
+        <li><a href="#">기타</a></li>
+        <li><a href="#">카탈로그</a></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="contents">
+  <div class="loc">
+    home > 모나미 제품 > <span class="loc_dep2">펜</span>
+  </div>
+  <div class="title">
+    <h3>PRODUCT <span>INFO</span></h3>
+    <div class="line"></div>
+  </div>
+  <div class="subContent">
+
+    <!-- content1ST -->
+    <div class="menu1st">
+      1content
+    </div>
+    <!-- content2ST -->
+    <div class="menu2st">
+      2content
+    </div>
+    <!-- content3ST -->
+    <div class="menu3st">
+      3content
+    </div>
+    <!-- content4ST -->
+    <div class="menu4st">
+      4content
+    </div>
+
+    <div class="menu5st">
+      5content
+    </div>
+
+    <div class="menu6st">
+      6content
+    </div>
+
+    <div class="menu7st">
+      7content
+    </div>
+  </div>
+
+</div>
+
+
+
 </body>
 </html>

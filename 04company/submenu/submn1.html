@@ -16,29 +16,47 @@
       $(".subContent div").hide().eq(0).show();
       $(".subinmn li").click(function(){
         var i = $(this).index();
-        $(".subContent div").hide().eq(i).fadeIn();
+        $(".subContent div").hide().eq(i).show();
 
         if(i == 0){
-          $(".loc_dep2,.title>h3").html("CEO 메세지");
+          $(".loc_dep2").html("CEO 메세지");
+          $(".title>h3").html("CEO <span>MESSAGE</span>");
         }else if(i == 1){
-          $(".loc_dep2,.title>h3").html("회사 정보");
+          $(".loc_dep2").html("회사 정보");
+          $(".title>h3").html("COMPANY <span>INFO</span>");
         }else if(i == 2){
-          $(".loc_dep2,.title>h3").html("회사 연혁");
+          $(".loc_dep2").html("회사 연혁");
+          $(".title>h3").html("MONAMI <span>HISTORY</span>");
         }else if(i == 3){
-          $(".loc_dep2,.title>h3").html("투자 정보");
+          $(".loc_dep2").html("투자 정보");
+          $(".title>h3").html("INVESTMENT <span>INFO</span>");
         }else if(i == 4){
-          $(".loc_dep2,.title>h3").html(" CI");
+          $(".loc_dep2").html(" CI");
+          $(".title>h3").html("MONAMI <span>CI</span>");
         }else if(i == 5){
-          $(".loc_dep2,.title>h3").html("채용 정보");
+          $(".loc_dep2,.title>h3").href("http://recruit.monami.co.kr/");
         }else if(i == 6){
           $(".loc_dep2,.title>h3").html("찾아오시는길");
+          $(".title>h3").html("MONAMI <span>CONTACT</span>");
         }
         return false; //클릭시 위로 이동방지
 
       });
-      }
+      $(".subinmn li,.subinmn ul li").click(function(){
+        var num = $(this).index();
+        $(".subinmn ul li,.subinmn ul li a").removeClass();
+        $(this).addClass("active");
+        $(".subinmn ul li a").eq(num).addClass("fontcolor");
+      });
+
+
     });
   </script>
+
+  <style>
+ .conbox{background-image: url(../img/testimg6.jpg);background-size: cover;background-position:top:-30px;}
+
+  </style>
 
 </head>
 <body>
@@ -56,7 +74,7 @@
               <li><a href="#">회사연혁</a></li>
               <li><a href="#">투자정보</a></li>
               <li><a href="#">CI</a></li>
-              <li><a href="#">채용정보</a></li>
+              <li><a href="http://recruit.monami.co.kr/">채용정보</a></li>
               <li><a href="#">찾아오시는길</a></li>
             </ul>
           </li>
@@ -89,10 +107,10 @@
               <li><a href="#">패밀리샵</a></li>
             </ul>
           </li>
-          <li class="touch"><a href="submn6.html">기업 구매 및 맞춤개발</a>
+          <li class="touch"><a href="http://mpms.monami.com/promotion/">기업 구매 및 맞춤개발</a>
             <ul class="submenu f p12">
-              <li><a href="#">기업단체구매</a></li>
-              <li><a href="#">맞춤개발용품</a></li>
+              <li><a href="http://mpms.monami.com/promotion/">기업단체구매</a></li>
+              <li><a href="submn6.html">맞춤개발용품</a></li>
             </ul>
           </li>
         </ul>
@@ -109,17 +127,17 @@
 
 <div class="container">
   <div class="conbox">
-
       <div class="imgbox"><h2>모나미 <span>소개</span></h2></div>
+      <div class="undertitle">언제 어디서나 모나미는 당신 곁에 있습니다.</div>
 
     <div class="subinmn">
       <ul class="clearfix">
-        <li><a href="#">CEO 메세지</a></li>
+        <li class="active"><a href="#" class="fontcolor">CEO 메세지</a></li>
         <li><a href="#">회사 정보</a></li>
         <li><a href="#">회사 연혁</a></li>
         <li><a href="#">투자 정보</a></li>
         <li><a href="#">CI</a></li>
-        <li><a href="#">채용 정보</a></a></li>
+        <li><a href="http://recruit.monami.co.kr/">채용 정보</a></li>
         <li><a href="#">찾아오시는길</a></li>
       </ul>
     </div>
@@ -131,10 +149,12 @@
 <div class="contents">
   <div class="loc">
     home > 모나미 소개 > <span class="loc_dep2">CEO 메세지</span>
+
   </div>
   <div class="title">
-    <h3>CEO 메세지</h3>
+    <h3>CEO <span>MESSAGE</span></h3>
     <div class="line"></div>
+
   </div>
   <div class="subContent">
 
