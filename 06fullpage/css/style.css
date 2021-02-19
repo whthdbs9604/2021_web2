@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+#navTop{position: fixed;width: 100%;padding-left:10px;z-index:1;}
+#navTop ul{position: absolute;right:20px;}
+#navTop li{float: left;}
+#navTop li a{display: block;line-height: 50px;text-align: center;padding:0 10px;width: 150px;}
+#navTop li.active{background: #ffafaf;border-radius:5px;}
+#navTop img{position: absolute;left:15px;top:5px;height: 50px;}
+
+
+.section{background-position: center;background-repeat: no-repeat;background-size: cover;}
+.section.page1{background-image: url(../images/backimg.jpg);}
+.section.page2{background-image: url(../images/subpage.jpg);}
+.section.page3{background-image: url(../images/subpage.jpg);}
+.section.page4{background-image: url(../images/subpage.jpg);}
+
+#fp-nav{right:20px;}
+#fp-nav ul li a span{background:none;}
+#fp-nav ul li{margin-bottom:15px;}
+#fp-nav ul li:nth-child(1){background-image: url(../images/icon1.png);background-size:contain;width:35px;height: 38px;padding:2px;}
+#fp-nav ul li:nth-child(2){background-image: url(../images/icon2.png);background-size:contain;width:35px;height: 31px;padding:2px;}
+#fp-nav ul li:nth-child(3){background-image: url(../images/icon3.png);background-size:contain;width:35px;height: 26px;padding:2px;}
+#fp-nav ul li:nth-child(4){background-image: url(../images/icon4.png);background-size:contain;width:35px;height: 35px;padding:2px;}
+
+
+
+/* 1page animation start */
+.candy.a{width: 130px; position: absolute;right:280px;bottom:50px;
+    animation-name:candy1;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy1{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+
+.candy.b{width: 130px; position: absolute;left:230px;bottom:150px;
+  animation-name:candy2;
+  animation-duration:3.5s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;}
+
+  @keyframes candy2{
+       0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.c{width: 130px; position: absolute;right:270px;top:160px;
+    animation-name:candy3;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy3{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.d{width: 100px; position: absolute;right:680px;bottom:430px;z-index:2;
+    animation-name:candy4;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy4{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.e{width: 130px; position: absolute;left:720px;top:160px;z-index:2;
+    animation-name:candy5;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy5{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.f{width: 100px; position: absolute;left:280px;top:250px;
+    animation-name:candy6;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy6{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.g{width: 40px; position: absolute;left:380px;top:150px;
+    animation-name:candy7;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy7{
+     0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+.candy.h{width: 40px; position: absolute;right:680px;bottom:250px; z-index:2;
+    animation-name:candy8;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+@keyframes candy8{
+     0%{transform:rotate(0deg)} 50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
+
+
+.plat{position: absolute;bottom:65px;left:573px;width: 750px;z-index:1;
+      animation-name: plat;
+      animation-duration:1s;
+      animation-fill-mode:forwards;
+      animation-timing-function:ease;}
+
+      @keyframes plat{
+           0%{bottom:-318px;} 50%{bottom:85px;} 100%{bottom:65px}}
+
+.lolipop{position: absolute;bottom:20px;left:920px;z-index:2;width: 50px;
+  animation-name: lolipop;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;}
+
+@keyframes lolipop{
+     0%{bottom:20px;} 50%{bottom:50px;} 100%{bottom:20px}}
+
+/* 1page animation end */

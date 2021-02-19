@@ -6,29 +6,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
    	<script src="js/jquery.fullpage.js"></script>
-
-
-	<style>
-		#navTop{position: fixed;width: 100%;padding-left:10px;z-index:1;}
-		#navTop ul{position: absolute;right:20px;}
-		#navTop li{float: left;}
-		#navTop li a{display: block;line-height: 50px;text-align: center;padding:0 10px;width: 150px;}
-	 	#navTop li.active{background: red;}
-		#navTop img{position: absolute;left:5px;top:5px;height: 50px;}
-
-
-		.section{background-position: center;background-repeat: no-repeat;background-size: cover;}
-		.section.page1{background-image: url(images/mainpage.png);}
-		.section.page2{background-image: url(images/subpage.jpg);}
-		.section.page3{background-image: url(images/subpage.jpg);}
-		.section.page4{background-image: url(images/subpage.jpg);}
-
-		#fp-nav{right:20px;}
-		#fp-nav ul li a span{background: pink;}
-
-	</style>
 
 	<script>
 		$(function(){
@@ -46,14 +26,25 @@
 	<nav id="navTop">
 		<img src="images/logo2.png" alt="logo">
 		<ul class="clearfix" id="topMenu">
-			<li data-menuanchor="m1st"><a href="#m1st">menu1</a></li>
-			<li data-menuanchor="m2st"><a href="#m2st">menu2</a></li>
-			<li data-menuanchor="m3st"><a href="#m3st">menu3</a></li>
-			<li data-menuanchor="m4st"><a href="#m4st">menu4</a></li>
+			<li data-menuanchor="m1st"><a href="#m1st">위니비니</a></li>
+			<li data-menuanchor="m2st"><a href="#m2st">베스트</a></li>
+			<li data-menuanchor="m3st"><a href="#m3st">이벤트</a></li>
+			<li data-menuanchor="m4st"><a href="#m4st">이벤트</a></li>
 		</ul>
 	</nav>
 	<div id="fullpage">
-		<div class="section page1" data-anchors="m1st"></div>
+		<div class="section page1" data-anchors="m1st">
+			<img src="images/candy1.png" alt="" class="candy a">
+			<img src="images/candy2.png" alt="" class="candy b">
+			<img src="images/candy3.png" alt="" class="candy c">
+			<img src="images/candy4.png" alt="" class="candy d">
+			<img src="images/candy5.png" alt="" class="candy e">
+			<img src="images/candy6.png" alt="" class="candy f">
+			<img src="images/candy7.png" alt="" class="candy g">
+			<img src="images/candy8.png" alt="" class="candy h">
+			<img src="images/plat.png" alt="" class="plat">
+			<img src="images/candy9.png" alt="" class="lolipop">
+		</div>
 		<div class="section page2" data-anchors="m2st"></div>
 		<div class="section page3" data-anchors="m3st"></div>
 		<div class="section page4" data-anchors="m4st"></div>
