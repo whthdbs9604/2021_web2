@@ -1,14 +1,18 @@
-<html lang="ko"><head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>company</title>
-
-
+	
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 
 
 	<script>
@@ -40,10 +44,17 @@
 				$("#mimenu").removeAttr("style");
 			});
 
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:700,
+				innerHeight:393.75
+			});
+
 		});
 
 
 	</script>
+
 </head>
 <body>
 
@@ -163,46 +174,69 @@
 			</li>
 
 			<li class="ct2st">
-				<a href="#">
-					<img src="img/play.jpg" alt="영상" class="bgimg">
+				<img src="img/img02-3.jpg" alt="영상" class="bgimg">
+				<a href="https://www.youtube.com/embed/-VYGqw6bThQ">
 					<img src="img/icon02.png" alt="실행" class="play">
-				</a>
+				</a class="youtube">
 			</li>
 
 			<li class="ct3st">
 
 				<div class="sliderwrap">
-					<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 315px;"><ul class="slider2nd" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-630px, 0px, 0px);"><li class="news clearfix bx-clone" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
-							<div class="left">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+					<div class="bx-wrapper" style="max-width: 100%;">
+						<div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 315px;">
+							<ul class="slider2nd" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-630px, 0px, 0px);">
+								<li class="news clearfix bx-clone" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
+							<div class="left"><h4>모나미, 독립운동가 안중근. 이육사의 정신 담은 '153 ID 시리즈' 출시</h4>
+								<p>- 삼일절 맞이해 독립운동가의 숭고한 정신과 가치 되새기고자 기획 <br>
+- 태극 문양 틴케이스에 볼펜, 금속 책갈피, 지함케이스 구성으로 소장 가치 높여 <br>
+- 모나미몰, 쿠팡, YES24에서 선출...</p>
+							</div>
 							<div class="right">
-								<img src="" alt="img">
+								<img src="img/newsimg.jpg" alt="newsimg1">
 							</div>
 						</li>
 						<li class="news clearfix" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="false">
-							<div class="left">1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="left"><h4>모나미X GS리테일, 이색 협업 '모나미 매직 스파클링' 음료 출시</h4>
+									<p>- 모나미의 스테디셀러 모나미 매직이 담긴 새콤달콤한 맛의 스파클링 음료로 재탄생 <br>
+- 모나미 매직의 외형과 검은색과 빨간색 잉크 색감까지 그대로 구현</p>
+
+							</div>
 							<div class="right">
-								<img src="" alt="이미지 원래 없음">
+								<img src="img/newsimg2.jpg" alt="이미지 원래 없음">
 							</div>
 						</li>
 						<li class="news clearfix" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 630px;">
-							<div class="left">2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="left"><h4>모나미, 컬러트윈브러쉬 6색 세트 출시</h4>
+								<p>- 디저트 파스텔 색상과 그레이 무드 색상 각 6색 추가 <br>
+- 필압 조절에 좋은 고무 재질의 브러쉬로 제작되어 손쉽게 사용 가능 <br>
+- 굵은 타입, 가는 타입의 트윈형 브러쉬로 구성되어 용도에 따라 선택할 수 있어</p>
+							</div>
 							<div class="right">
-								<img src="" alt="img">
+								<img src="img/newsimg3.jpg" alt="img">
 							</div>
 						</li>
 						<li class="news clearfix" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
-							<div class="left">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="left"><h4>모나미, 삼성전자 갤럭시S21 콜라보 'S펜' 출시</h4>
+								<p>- 심플한 디자인과 메탈 소재의 바디를 적용해 고급스러움 더해 <br>
+- S펜 주요 부품인 모듈과 모나미 펜을 결합하여 상용화까지 6개월 소요 <br>
+- 미세한 펜촉으로 간단한 메모부터 섬세하고 정교한 드로잉 작업까지 가능</p>
+							</div>
 							<div class="right">
-								<img src="" alt="img">
+								<img src="img/newsimg4.jpg" alt="img">
 							</div>
 						</li>
 					<li class="news clearfix bx-clone" style="float: left; list-style: none; position: relative; width: 630px;" aria-hidden="true">
-							<div class="left">1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eum!</div>
+							<div class="left"><h4>모나미몰, 설 맞이 고객 감사 할인 프로모션</h4>
+								<p>- 2만원 이상 구매 시 모나미몰 리빙앤라이프 등 모든 제품 5% 할인 프로모션 진행 <br>
+- 신축년 맞이 소띠 고객 무료 배송 서비스 제공 <br>
+- 모나미 문구제품 최대 50% 할인</p>
+							</div>
 							<div class="right">
-								<img src="" alt="이미지 원래 없음">
+								<img src="img/newsimg5-2.jpg" alt="이미지 원래 없음" class="newsimg5">
 							</div>
 						</li></ul></div></div>
-					<h2>공지</h2>
+					<h2>MONAMI <span>NEWS</span></h2>
 						<div class="btn clearfix">
 							<!-- <img src="images/btn01_01.jpg" alt="" class="prvbtn">
 							<img src="images/btn01_02.jpg" alt="" class="nxtbtn"> -->
