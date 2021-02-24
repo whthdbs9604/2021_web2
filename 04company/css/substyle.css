@@ -49,8 +49,8 @@ height: 100px;color: #6a6a6a;}
 .subinmn li:first-child{border-left: 1px solid rgb(224, 224, 224);}
 
 .contents{width: 1260px;margin: 0 auto;margin-top:40px;}
-.contents .subContent div{
-  height: 1000px;border: 1px solid rgb(224, 224, 224);
+.contents .subContent>div{
+  height: 1100px;border: 1px solid rgb(224, 224, 224);
 }
 .contents .loc{padding:20px 0;}
 .contents .title{width: 100%;height: 150px;text-align: center;line-height:150px;margin-bottom:20px; font-size:2em;position: relative;}
