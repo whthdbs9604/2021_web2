@@ -19,13 +19,29 @@
 	<script>
 		$(document).ready(function(){
 
-			$(".slider").bxSlider({
+			var slider1st = $(".slider").bxSlider({
 				controls:false,
 				pager:false,auto:true
 			});
-			$(".slider2nd").bxSlider({
+
+			$(".bt3").click(function(){
+				slider1st.goToNextSlide();
+			});
+			$(".bt4").click(function(){
+				slider1st.goToPrevSlide();
+			});
+
+
+			var slider2st = $(".slider2nd").bxSlider({
 				controls:false,
 				pager:false
+			});
+
+			$(".bt1").click(function(){
+				slider2st.goToNextSlide();
+			});
+			$(".bt2").click(function(){
+				slider2st.goToPrevSlide();
 			});
 
 			$(".tgmn").click(function(){
@@ -121,7 +137,8 @@
 		</div>
 	</div>
 		<div class="sliderwrap">
-		<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 1005px;">
+		<div class="bx-wrapper" style="max-width: 100%;">
+			<div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 1005px;">
 			<ul class="slider" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-2964px, 0px, 0px);">
 
 			<li class="slider1st" style="float: left; list-style: none; position: relative; width: 988px;" aria-hidden="true"> <!-- por -->
@@ -135,7 +152,7 @@
 			<li class="slider2st" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 988px;"> <!-- por -->
 				<!-- <img src="images/mainimg01.jpg" alt=""> -->
 				<div class="slidertxt txt2">
-					<h3>에프엑스 <br> 일오삼탑골셋-트</h3>
+					<h3>에프엑스 <br> 일오삼 탑골셋-트</h3>
 					<p>역시, 좋아요! <br> 래트로한 뉴 디자인</p>
 				</div>
 			</li>
@@ -150,6 +167,9 @@
 
 
 		</ul>
+
+		<div class="bt3"><img src="img/btn3.png" alt=""></div>
+		<div class="bt4"><img src="img/btn4.png" alt=""></div>
 	</div>
 </div>
 
@@ -226,12 +246,17 @@
 							<div class="right">
 								<img src="img/newsimg5-2.jpg" alt="이미지 원래 없음" class="newsimg5">
 							</div>
-						</li></ul></div></div>
+						</li>
+					</ul>
+				</div>
+			</div>
 					<h2>MONAMI <span>NEWS</span></h2>
 						<div class="btn clearfix">
 							<!-- <img src="images/btn01_01.jpg" alt="" class="prvbtn">
 							<img src="images/btn01_02.jpg" alt="" class="nxtbtn"> -->
 						</div>
+						<div class="bt1"><img src="img/btn1.png" alt=""></div>
+						<div class="bt2"><img src="img/btn2.png" alt=""></div>
 				</div>
 			</li>
 
