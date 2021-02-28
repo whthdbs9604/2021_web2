@@ -16,7 +16,7 @@
       $(".subContent div").hide().eq(0).show();
       $(".subinmn li").click(function(){
         var i = $(this).index();
-        $(".subContent div").hide().eq(i).show();
+        $(".subContent>div").hide().eq(i).show();
 
         if(i == 0){
           $(".loc_dep2").html("CEO 메세지");
@@ -70,6 +70,33 @@
  .flowcls{display: block !important;}
  .flowcls p{position: absolute;right:220px;bottom:40px;font-size:20px;}
  .flowcls img{position: absolute;right:120px;bottom:40px;}
+
+.menu2st{padding:100px 20px 0 20px;height: 2500px !important;}
+.menu2st li{float: left;}
+.menu2st>ul>li{margin-right:20px; margin-bottom:100px;}
+ .menu2st li img{width: 599px;display: block;}
+ .menu2st ul li.imgbox{position: relative;}
+ .menu2st ul li.imgbox:nth-child(2n){margin-right:0;}
+ .menu2st .whitebox{position: absolute;width: 559px;height: 100px;background: rgba(255,255,255,0.7);left:20px;bottom:20px; display: block !important;padding: 20px 40px;}
+ .menu2st .whitebox a{display: block;border: 1px solid #dcdcdc;width: 200px;height: 60px;background: white;float: right;}
+ .menu2st .whitebox p{float: left;font-size:1.2em;font-weight:bold;}
+ .menu2st .whitebox p span{color: #c40f38;}
+ .menu2st .whitebox img{width:120px;}
+ .menu2st .whitebox .pad{padding-left:40px;}
+ .menu2st .whitebox .ptop{padding-top:10px;}
+ .txtbox{display: block !important;margin-bottom:20px;text-align: center;}
+ .txtbox h2{font-weight: normal;}
+ .txtbox span{width: 40px;height: 35px;background: #c40f38; color: white;display: inline-block;text-align: center;}
+ .mapbox{display: block !important;}
+ .mapbox li{width: 100%;}
+ .mapbox li.firmap{border-bottom:0 none}
+ .mapbox li.firmap:last-child{border-bottom: 1px solid #dcdcdc;}
+ .mapbox img{width: 100%;display: block;}
+ .mapbox .firmap{border: 1px solid #dcdcdc;padding:40px 50px;}
+ .mapbox .firmap .monamicolor{color: #c40f38;}
+ .mapbox .firmap p{margin-bottom:10px;color: #ababab;}
+ .mapbox .firmap p>span{margin-right:20px;color: #4a4a4a;font-weight:bold;}
+
   </style>
 
 </head>
@@ -219,19 +246,96 @@
           <img src="../img/message_sign.jpg" alt="">
         </li>
 
+        <footer>
+          
+        </footer>
+
 
 
 
     </div>
     <!-- content2ST -->
     <div class="menu2st">
-      <ul>
-        <li>
-          <img src="../img/companyimg3.jpg" alt="infoimg">
-          <a href="#"></a>
-        </li>
 
+      <div class="txtbox">
+        <h2>
+          <span>01</span> 계열사 소개
+        </h2>
+      </div>
+      <ul class="clearfix">
+
+
+        <li class="imgbox">
+          <img src="../img/companyimg3.jpg" alt="infoimg">
+          <div class="whitebox">
+            <p>모나미 문구제품 <br> <span>전문 제조 기업</span></p>
+            <a href="#" class="pad ptop"><img src="../img/company_info2_logo3.jpg" alt=""></a>
+          </div>
+        </li>
+        <li class="imgbox">
+          <img src="../img/company_info2_img2.jpg" alt="infoimg">
+          <div class="whitebox">
+            <p>HP전산용품 & '<span>통합출력관리 <br> 서비스</span>' 솔루션 공급</p>
+            <a href="#" class="pad"><img src="../img/company_info2_logo2.jpg" alt=""></a>
+          </div>
+        </li>
+        <li class="imgbox">
+          <img src="../img/company_info2_img1.jpg" alt="infoimg">
+          <div class="whitebox">
+            <p>PARKER/WATERMAN <br> TOMBOW <span>국내 공식</span> 수입업체</p>
+            <a href="#" class="pad ptop"><img src="../img/hangsologo.jpg" alt=""></a>
+          </div>
+        </li>
+        <li class="imgbox">
+          <img src="../img/company_info2_img4.jpg" alt="infoimg">
+          <div class="whitebox">
+            <p>철학, 역사, 예술, 과학, 경제를<br><span>미술로 만나다</span></p>
+            <a href="#" class="pad ptop"><img src="../img/company_info2_logo4.jpg" alt=""></a>
+          </div>
+        </li>
       </ul>
+
+      <div class="txtbox">
+        <h2>
+          <span>02</span> 해외 법인
+        </h2>
+      </div>
+
+      <div class="mapbox">
+        <img src="../img/company_info3_img1.jpg" alt="">
+        <ul>
+          <li class="firmap">
+            <h4><span class="monamicolor">THAILAND</span> 모나미 타일랜드 (방콕)</h4> <br>
+            <p><span>법인명</span>MONAMI THAILAND</p>
+            <p><span>주소</span>#475 Siripinyo Bldg.,12th floor, Si Ayutthaya Rd.,Khwaeng ThanonPhayathai, Khet Ratchathewi, Bangkok 10400 Thailand</p>
+            <p><span>전화</span>+66-2-640-0980-2</p>
+            <p><span>팩스</span>+66-2-640-0980-2</p>
+            <p><span>SNS</span>www.facebook.com/monami.thailand/</p>
+          </li>
+          <li class="firmap">
+            <h4><span class="monamicolor">THAILAND</span> 모나미 타일랜드 (아마타 공장)</h4> <br>
+            <p><span>주소</span>Amata City Industrial Estate 7/281 Moo. 6 Mabyangporn, Plaukdang, Rayong 21140 Thailand</p>
+            <p><span>전화</span>+66-38-6508091-4218</p>
+          </li>
+          <li class="firmap">
+            <h4><span class="monamicolor">CHINA</span> 상해 모나미 (상하이)</h4> <br>
+            <p><span>법인명</span>上海慕那美文化用品有限公司 (SHANGHAI MONAMI)</p>
+            <p><span>홈페이지</span>www.monami.com.cn</p>
+            <p><span>주소(중문)</span>嘉定区兴贤路1388号9号楼</p>
+            <p><span>주소(영문)</span>Building No.9, 1388 ,XingXian Road, Jiading District,, Shanghai, China.</p>
+            <p><span>전화</span>+86-21-69521210-69521216</p>
+            <p><span>팩스</span>+86-21-69521250-59160776</p>
+            <p><span>SNS</span>weibo.com/shmonami</p>
+          </li>
+          <li class="firmap">
+            <h4><span class="monamicolor">POLAND</span> 제니스 모나미(바르샤바)</h4> <br>
+            <p><span>법인명</span>ZENITH MONAMI</p>
+            <p><span>주소</span>ul. Poleczki 23, 02-822, Warsaw, Poland.</p>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
     <!-- content3ST -->
     <div class="menu3st">
