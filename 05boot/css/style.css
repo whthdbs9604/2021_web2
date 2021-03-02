@@ -27,6 +27,7 @@
 .cardwrap>p,.cardwrap>h1{text-align: center;}
 .card{width: 300px !important;margin-top:50px;border: 5px solid rgba(0,0,0,.125) !important;}
 .card img{width: 100px;margin-bottom:10px;}
+.card button{font-weight: bold;}
 .card-body>p{color: #747474;}
 .btnarow{width: 39px;height: 38px;position: absolute;bottom:0;right:0;}
 
