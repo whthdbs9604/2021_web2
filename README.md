@@ -7,5 +7,6 @@
  (메뉴바에만 서브페이지 이동 가능,sns 웹 이동가능)
 5. bxslider https://whthdbs9604.github.io/2021_web2/bxslider/index_slider03.htm
 6. Fullpage https://whthdbs9604.github.io/2021_web2/06fullpage/index.html
+7. boot https://whthdbs9604.github.io/2021_web2/05boot/index02.html
 
 
