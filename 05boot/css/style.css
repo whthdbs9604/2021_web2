@@ -22,6 +22,16 @@
 .slide1 li .btn2nd{font-weight:bold;}
 .slide1 li button{padding:10px 30px;}
 
+.fixwrap{width: 1260px;margin: 0 auto;height: 450px;}
+.fiximg{width: 600px;float: left;margin-right:40px;}
+.colorbox{width: 150px;background:#ffc107 ;}
+.textbox .topp{margin-top:15px;}
+.textbox p{color: #747474;}
+.textbox h1{float: left; margin-right:15px;font-weight:bold;color: #ffc107;font-size:3em;}
+.textbox h3{padding:10px 0;}
+.textbox button img{width: 25px;margin-right:5px;}
+.textbox button{width: 170px;height: 45px;margin-right:15px;}
+
 .cardwrap{width: 1260px;margin: 0 auto;margin-bottom:100px;position: relative;}
 .cardwrap>p{margin-bottom:0;color: #747474;}
 .cardwrap>p,.cardwrap>h1{text-align: center;}
