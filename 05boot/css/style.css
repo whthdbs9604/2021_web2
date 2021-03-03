@@ -14,13 +14,21 @@
 .nav-item:hover{background: rgb(255, 180, 80);}
 
 .slidewrap{margin-bottom:70px;}
-.slide1 li{background-image: url(../img/img1.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
+.slide1 .img1{background-image: url(../img/img1.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
+.slide1 .img2{background-image: url(../img/img2.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
+.slide1 .img3{background-image: url(../img/img3.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
 .slide1 li h1{font-size:4em;margin-bottom:40px;}
 .slide1 li p{font-size:1.2em;margin-bottom:5px;}
 .slide1 li .p2nd{margin-bottom:40px;}
 .slide1 li .btn1st{margin-right:10px;font-weight:bold;}
 .slide1 li .btn2nd{font-weight:bold;}
 .slide1 li button{padding:10px 30px;}
+.bx-wrapper {
+  -moz-box-shadow:none !important;
+-webkit-box-shadow:none !important;
+      box-shadow:none !important;
+      border: 0 none !important;
+      margin-bottom:0 !important;}
 
 .fixwrap{width: 1260px;margin: 0 auto;height: 450px;}
 .fiximg{width: 600px;float: left;margin-right:40px;}
@@ -31,6 +39,7 @@
 .textbox h3{padding:10px 0;}
 .textbox button img{width: 25px;margin-right:5px;}
 .textbox button{width: 170px;height: 45px;margin-right:15px;}
+.textbox button span{color: #ffc107;}
 
 .cardwrap{width: 1260px;margin: 0 auto;margin-bottom:100px;position: relative;}
 .cardwrap>p{margin-bottom:0;color: #747474;}
