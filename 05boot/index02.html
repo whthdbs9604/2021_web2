@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>부트스트랩 홈페이지</title>
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<script src="js/jquery.bxslider.js"></script>
+  	<script src="js/all.js"></script>
 
   <script>
 
@@ -106,50 +108,52 @@
 
   </div>
 
-  <div class="cardwrap">
-    <h1>Our Repair Services</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloremque est at quasi vero iste.<br></p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odio!</p>
+  <div class="card100p">
+    <div class="cardwrap">
+      <h1>Our Repair Services</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloremque est at quasi vero iste.<br></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odio!</p>
 
-    <div class="row">
-      <div class="col col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/pc.svg" alt="">
-            <h5>REPAIR COMPUTER</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+      <div class="row">
+        <div class="col col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/pc.svg" alt="">
+              <h5>REPAIR COMPUTER</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+            </div>
+            <button type="button" class="btn btn-warning btnarow text-light">→</button>
           </div>
-          <button type="button" class="btn btn-warning btnarow text-light">→</button>
         </div>
-      </div>
-      <div class="col col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/phone.svg" alt="">
-            <h5>REPAIR MOBILE</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+        <div class="col col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/phone.svg" alt="">
+              <h5>REPAIR MOBILE</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+            </div>
+            <button type="button" class="btn btn-warning btnarow text-light">→</button>
           </div>
-          <button type="button" class="btn btn-warning btnarow text-light">→</button>
         </div>
-      </div>
-      <div class="col col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/pc.svg" alt="">
-            <h5>REPAIR LAPTOP</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+        <div class="col col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/pc.svg" alt="">
+              <h5>REPAIR LAPTOP</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+            </div>
+            <button type="button" class="btn btn-warning btnarow text-light">→</button>
           </div>
-          <button type="button" class="btn btn-warning btnarow text-light">→</button>
         </div>
-      </div>
-      <div class="col col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/phone.svg" alt="">
-            <h5>REPAIR TABLET</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+        <div class="col col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/phone.svg" alt="">
+              <h5>REPAIR TABLET</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam iusto veritatis dicta ea illo laborum esse harum nemo placeat.</p>
+            </div>
+            <button type="button" class="btn btn-warning btnarow text-light">→</button>
           </div>
-          <button type="button" class="btn btn-warning btnarow text-light">→</button>
         </div>
       </div>
     </div>
@@ -201,10 +205,81 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, itaque!</p>
         </div>
       </div>
-
-
     </div>
   </div>
+
+  <div class="formwrap">
+    <img src="img/app.svg" alt="">
+
+    <form>
+      <h2>REQUEST FREE QUOTE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis cumque consectetur soluta at nihil.</p>
+      <div class="form-group">
+        <label for="formGroupExampleInput"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jhon Smith">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Phone">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Message Here...">
+      </div>
+      <button type="button" class="btn btn-warning">SEND REQUEST</button>
+    </form>
+  </div>
+
+  <div class="gallerywrap">
+    <h1>Our Repair Gallery</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci pariatur id quasi dolor dolorum! Quam, assumenda inventore provident laboriosam molestias.</p>
+    <p class="lastp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nesciunt!</p>
+    <div class="gallwrap">
+      <div class="boxwrap" style="margin-top:30px;">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="boxwrap">
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="freewrap">
+    <h1 style="text-align:center;">Free Repair Guide</h1>
+    <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minima ea adipisci hic, eligendi est.</p>
+    <div class="row cardwrap2 col-md-10 offset-md-1">
+      <div class="card">
+        <img src="img/card1.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <p class="cardbox">January 27, 2017</p>
+          <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
+          <p class="card-text"><i class="far fa-comments"></i> 0 comment</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/card2.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <p class="cardbox">January 27, 2017</p>
+          <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
+          <p class="card-text"><i class="far fa-comments"></i> 0 comment</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/gall6.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <p class="cardbox">January 27, 2017</p>
+          <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
+          <p class="card-text"><i class="far fa-comments"></i> 0 comment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 </body>
 </html>

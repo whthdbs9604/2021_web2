@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 .upbannerwrap{width: 100%;height: 120px;}
 .upbanner{width: 1260px;margin: 0 auto;padding:30px 0;}
 .upbanner{display: flex;justify-content: space-around;}
@@ -41,13 +42,14 @@
 .textbox button{width: 170px;height: 45px;margin-right:15px;}
 .textbox button span{color: #ffc107;}
 
+.card100p{background: #faf7f1;padding:40px 0 1px 0;}
 .cardwrap{width: 1260px;margin: 0 auto;margin-bottom:100px;position: relative;}
 .cardwrap>p{margin-bottom:0;color: #747474;}
 .cardwrap>p,.cardwrap>h1{text-align: center;}
-.card{width: 300px !important;margin-top:50px;border: 5px solid rgba(0,0,0,.125) !important;}
-.card img{width: 100px;margin-bottom:10px;}
-.card button{font-weight: bold;}
-.card-body>p{color: #747474;}
+.cardwrap .card{width: 300px !important;margin-top:50px;border: 5px solid rgba(227, 221, 212, 0.7) !important;}
+.cardwrap .card img{width: 100px;margin-bottom:10px;}
+.cardwrap .card button{font-weight: bold;}
+.cardwrap .card-body>p{color: #747474;}
 .btnarow{width: 39px;height: 38px;position: absolute;bottom:0;right:0;}
 
 .maleimg{width: 1260px; margin: 0 auto;padding:30px;display:flex;justify-content: space-around;padding:50px 0;}
@@ -63,3 +65,27 @@
 .firbox{width: 300px;}
 .numbox h1{float:left;margin-right:30px;font-size:3.8em;margin-bottom:0 !important;font-weight:bold; color: #ffc107;}
 .numbox h3{font-weight:bold;}
+
+.formwrap{width: 1260px;margin: 0 auto;padding:80px 0;display:flex;}
+.formwrap img{width: 600px; float: left;margin-right:20px;}
+.formwrap button{width: 200px;margin-top:30px;float: right;}
+form{float:left;width: 100%;}
+form>p{margin-bottom:0;}
+.form-group{height: 40px;width: 100%;}
+
+.gallerywrap{width: 1260px;margin: 0 auto;text-align: center;}
+.gallerywrap h1{margin-bottom: 30px;}
+.gallerywrap p{color: #747474;margin-bottom:0 !important;}
+.boxwrap{display: flex; justify-content: space-between;margin-bottom:8px;}
+.box1{width: 308.5px;height: 310px;background-image: url(../img/gall1.jpg);background-size: cover;}
+.box2{width: 308.5px;height: 310px;background-image: url(../img/gall2.jpg);background-size: cover;}
+.box3{width: 625.5px;height: 310px;background-image: url(../img/gall3.jpg);background-size: cover;}
+.box4{width: 625.5px;height: 310px;background-image: url(../img/gall4.jpg);background-size: cover;}
+.box5{width: 308.5px;height: 310px;background-image: url(../img/gall5.jpg);background-size: cover;}
+.box6{width: 308.5px;height: 310px;background-image: url(../img/gall7.jpg);background-size: cover;}
+
+.freewrap{width: 1260px;margin: 0 auto;padding:20px 0;}
+.freewrap .card{width: 320px;}
+.freewrap .card-body .cardbox{border: 2px solid #ffc107;width: 140px;height: 28px;text-align: center;border-radius:12px;}
+.cardwrap2{display:flex;justify-content: space-around;}
+.freewrap .card img{width:100%;height: 200px;}
