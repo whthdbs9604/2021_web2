@@ -8,5 +8,6 @@
 5. bxslider https://whthdbs9604.github.io/2021_web2/bxslider/index_slider03.htm
 6. Fullpage https://whthdbs9604.github.io/2021_web2/06fullpage/index.html
 7. boot https://whthdbs9604.github.io/2021_web2/05boot/index02.html
+8. boot2 https://whthdbs9604.github.io/2021_web2/07boot/index.html
 
 
