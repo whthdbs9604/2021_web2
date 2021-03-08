@@ -11,7 +11,7 @@
 .nav-item span{font-size:0.5em;color: white;background: #ff4747;width: 12px;height: 12px;display: block;border-radius:5px;text-align: center;line-height:12px;font-weight:bold;position: absolute;top:5px;right:0;}
 .textbox{text-align: center;color: white;}
 .textbox img{height: 800px;background-position: center;}
-.textbox h1{padding:20px 0;}
+.textbox h1{padding:20px 0;} 
 .textbox button{background: #ffb34f;width: 140px;height: 40px;margin-top:40px;}
 
 .bx-wrapper {
