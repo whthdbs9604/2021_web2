@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 .slideron{position: relative;height: 1000px;}
 .navbar{z-index:2;position: absolute;}
 .sliderwrap{position: absolute;top:-69px;z-index:1;min-width:576px;text-align: center;}
