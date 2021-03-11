@@ -11,20 +11,23 @@
 .iconline img{width: 50px;}
 .btnbner{border: 2px solid #ffc107 !important;}
 
-.navwrap .navbar{width: 1260px;margin: 0 auto;padding:0;}
+.navwrap .navbar{width: 100%;margin: 0 auto;padding:0;}
+.navbar .navbar-brand img{width:80px;}
+.navbar-toggler{float: right;}
 .nav-link{width: 100px;height: 50px;text-align: center;padding:0 !important;line-height:50px;}
 .nav-item:hover{background: rgb(255, 180, 80);}
 
 .slidewrap{margin-bottom:70px;}
-.slide1 .img1{background-image: url(../img/img1.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
-.slide1 .img2{background-image: url(../img/img2.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
-.slide1 .img3{background-image: url(../img/img3.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;padding:250px 330px;}
+.slide1 .img1{background-image: url(../img/img1.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;}
+.slide1 .img2{background-image: url(../img/img2.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;}
+.slide1 .img3{background-image: url(../img/img3.jpg);background-repeat: no-repeat;height: 800px;width: 100%;background-position:center;}
+.slide1 li{text-align: center;}
 .slide1 li h1{font-size:4em;margin-bottom:40px;}
 .slide1 li p{font-size:1.2em;margin-bottom:5px;}
 .slide1 li .p2nd{margin-bottom:40px;}
 .slide1 li .btn1st{margin-right:10px;font-weight:bold;}
 .slide1 li .btn2nd{font-weight:bold;}
-.slide1 li button{padding:10px 30px;}
+.slide1 li button{padding:10px 30px; width: 220px;}
 .bx-wrapper {
   -moz-box-shadow:none !important;
 -webkit-box-shadow:none !important;
@@ -32,9 +35,11 @@
       border: 0 none !important;
       margin-bottom:0 !important;}
 
-.fixwrap{width: 1260px;margin: 0 auto;height: 450px;}
-.fiximg{width: 600px;float: left;margin-right:40px;}
+
+.imgfix{width:100%;}
+.fiximg{width:500px;float: left;margin-right:40px;}
 .colorbox{width: 150px;background:#ffc107 ;}
+.textbox{}
 .textbox .topp{margin-top:15px;}
 .textbox p{color: #747474;}
 .textbox h1{float: left; margin-right:15px;font-weight:bold;color: #ffc107;font-size:3em;}
@@ -44,25 +49,22 @@
 .textbox button span{color: #ffc107;}
 
 .card100p{background: #ecf8fc;padding:40px 0 1px 0;}
-.cardwrap{width: 1260px;margin: 0 auto;margin-bottom:100px;position: relative;}
-.cardwrap>p{margin-bottom:0;color: #747474;}
-.cardwrap>p,.cardwrap>h1{text-align: center;}
-.cardwrap .card{width: 300px !important;margin-top:50px;border: 5px solid rgba(227, 221, 212, 0.7) !important;}
-.cardwrap .card img{width: 100px;margin-bottom:10px;}
-.cardwrap .card button{font-weight: bold;}
-.cardwrap .card-body>p{color: #747474;}
+.card100p .textbox2{text-align: center;}
+.card100p .textbox2 p{margin-bottom:0;color: #747474;}
+.card100p .card{border: 0px none !important;}
+.card100p .card img{width: 100px;margin-bottom:10px;}
+.card100p .card button{font-weight: bold;}
+.card100p .card-body>p{color: #747474;}
 .btnarow{width: 39px;height: 38px;position: absolute;bottom:0;right:0;}
 
-.maleimg{width: 1260px; margin: 0 auto;padding:30px;display:flex;justify-content: space-around;padding:50px 0;}
-.maleimg .maletext{width: 400px;float: left;text-align: center;}
-.maleimg .maletext h2{margin-bottom:30px;}
-.maleimg .maletext p{color: #747474;}
-.maleimg img{width:400px;}
+
+.maletext{width: 400px;float: left;text-align: center;}
+.maletext h2{margin-bottom:30px;}
+.maletext p{color: #747474;}
+.male img{width:400px;}
 
 .fimgbox{width: 100%;background-image: url(../img/coding.png);background-repeat: no-repeat;background-size: cover; color: white !important;padding:50px 0;}
-.prog{width: 1260px;margin: 0 auto;}
-.flextext{display:flex;justify-content: space-between;}
-.prog>h1,.prog>p{text-align: center;}
+.fimgbox .textbox3{text-align: center;}
 .firbox{width: 300px;}
 .numbox h1{float:left;margin-right:30px;font-size:3.8em;margin-bottom:0 !important;font-weight:bold; color: #ffc107;}
 .numbox h3{font-weight:bold;}
