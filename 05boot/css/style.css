@@ -56,7 +56,8 @@
 .card100p .card-body>p{color: #747474;}
 .btnarow{width: 39px;height: 38px;position: absolute;bottom:0;right:0;}
 
-
+.slider .row{position: relative;}
+.silder .swiper-button-next,.silder .swiper-button-prev{position: absolute;}
 .maletext{width: 400px;float: left;text-align: center;}
 .maletext h2{margin-bottom:30px;}
 .maletext p{color: #747474;}

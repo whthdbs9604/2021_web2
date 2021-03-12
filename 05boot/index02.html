@@ -11,11 +11,13 @@
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<script src="js/jquery.bxslider.js"></script>
   	<script src="js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 
   <script>
 
@@ -24,7 +26,18 @@
       controls:false,
       pager:false,auto:true
     });
+    var swiper = new Swiper('.swiper-container', {
+       nextButton: '.swiper-button-next',
+       prevButton: '.swiper-button-prev',
+       slidesPerView: 1,
+       spaceBetween: 35,
+       loop: true
+    });
   });
+
+
+
+    // swiper.js demo
 
   </script>
 
@@ -57,7 +70,7 @@
   </div>
 
   <div class="navwrap bg-dark">
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container navbar navbar-expand-lg bg-dark navbar-dark">
     <a class="navbar-brand d-lg-none ml-3" href="#!"><img src="img/logoimg.png" alt=""></a>
       <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbartoggler" aria-controls="navbartoggler" aria-expended="false" >
         <span class="navbar-toggler-icon"></span>
@@ -178,19 +191,47 @@
     </div>
   </div>
 
-    <div class="container mb-5 mt-5">
-      <div class="row d-flex justify-content-center">
-        <div class="maletext mr-3 order-2 order-md-2 col">
-          <h2>Our Clients<br>Opinion About Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti beatae neque perspiciatis accusantium veniam architecto tenetur molestias aliquid non animi facere eligendi maiores distinctio, debitis, doloribus repellendus sint sequi.</p>
-          <h5>DEBORAM BECK</h5>
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-        <div class="male order-1 order-md-1 col mb-3 mb-md-0">
-          <img src="img/computerboy.svg" alt="">
+    <div class="slider">
+      <div class="container mb-5 mt-5">
+        <div class="row">
+          <div class="swiper-container order-2 order-md-2 col-12 col-lg-6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="maletext">
+                  <h2>Our Clients<br>Opinion About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti beatae neque perspiciatis accusantium veniam architecto tenetur molestias aliquid non animi facere eligendi maiores distinctio, debitis, doloribus repellendus sint sequi.</p>
+                  <h5>DEBORAM BECK</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="maletext">
+                  <h2>Our Clients<br>Opinion About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti beatae neque perspiciatis accusantium veniam architecto tenetur molestias aliquid non animi facere eligendi maiores distinctio, debitis, doloribus repellendus sint sequi.</p>
+                  <h5>DEBORAM BECK</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="maletext">
+                  <h2>Our Clients<br>Opinion About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti beatae neque perspiciatis accusantium veniam architecto tenetur molestias aliquid non animi facere eligendi maiores distinctio, debitis, doloribus repellendus sint sequi.</p>
+                  <h5>DEBORAM BECK</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="male order-1 order-md-1 col mb-3 mb-md-0">
+            <img src="img/computerboy.svg" alt="">
+          </div>
+          <div class="swiper-button-next "></div>
+					<div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
+
+
 
   <div class="fimgbox">
     <div class="container">
@@ -258,13 +299,13 @@
     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nesciunt!</p>
 
         <div class="row mr-1 ml-1">
-          <img src="img/gall1.jpg" alt="" class="box1 img-fluid col-3 pr-1 pl-0 mb-2">
-          <img src="img/gall2.jpg" alt="" class="box2 img-fluid col-3 pr-1 pl-1 mb-2">
-          <img src="img/gall3.jpg" alt="" class="box3 img-fluid col-6 pr-0 pl-1 mb-2">
+          <img src="img/gall1.jpg" alt="" class="box1 img-fluid col-6 col-lg-3  pr-2 pl-0 mb-2">
+          <img src="img/gall2.jpg" alt="" class="box2 img-fluid col-6 col-lg-3 pr-0 pr-lg-2 pl-0 mb-2">
+          <img src="img/gall3.jpg" alt="" class="box3 img-fluid col-12 col-lg-6 pr-0 pl-0 mb-2 ">
 
-          <img src="img/gall4.jpg" alt="" class="box4 img-fluid col-6 pr-1 pl-0">
-          <img src="img/gall5.jpg" alt="" class="box5 img-fluid col-3 pr-1 pl-1">
-          <img src="img/gall6.jpg" alt="" class="box6 img-fluid col-3 pr-0 pl-1">
+          <img src="img/gall4.jpg" alt="" class="box4 img-fluid col-12 pr-0 pr-lg-2 pl-0 mb-2 mb-lg-0 col-lg-6">
+          <img src="img/gall5.jpg" alt="" class="box5 img-fluid col-6 pr-2 pr-lg-2 pl-0 mb-lg-0 col-lg-3">
+          <img src="img/gall6.jpg" alt="" class="box6 img-fluid col-6 pr-0 pl-0 col-lg-3">
         </div>
   </div>
 
@@ -275,7 +316,7 @@
       <div class="card col-12 col-lg-4" style="border:0 none;">
         <img src="img/card1.jpg" alt="" class="card-img-top  m-0-auto">
         <div class="card-body">
-          <p class="cardbox">January 27, 2017</p>
+          <p class="cardbox" style="color:#ffc107;">January 27, 2017</p>
           <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
           <p class="card-text" style="color:#747474;"><i class="far fa-edit"></i> Repair Guide One | <i class="far fa-comments"></i> 0 comment </p>
         </div>
@@ -283,7 +324,7 @@
       <div class="card col-12 col-lg-4" style="border:0 none;">
         <img src="img/card2.jpg" alt="" class="card-img-top">
         <div class="card-body">
-          <p class="cardbox">January 27, 2017</p>
+          <p class="cardbox" style="color:#ffc107;">January 27, 2017</p>
           <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
           <p class="card-text" style="color:#747474;"><i class="far fa-edit"></i> Blog Whit Both Bar | <i class="far fa-comments"></i> 0 comment</p>
         </div>
@@ -291,7 +332,7 @@
       <div class="card col-12 col-lg-4" style="border:0 none;">
         <img src="img/gall6.jpg" alt="" class="card-img-top">
         <div class="card-body">
-          <p class="cardbox">January 27, 2017</p>
+          <p class="cardbox" style="color:#ffc107;">January 27, 2017</p>
           <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
           <p class="card-text" style="color:#747474;"><i class="far fa-edit"></i> Repair Guide One | <i class="far fa-comments"></i> 0 comment</p>
         </div>
@@ -308,7 +349,7 @@
            <img src="img/logoimg.png" alt="" class="ml-lg-5">
            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, itaque officia eius enim facilis modi eaque unde explicabo aliquam commodi consequuntur earum hic amet id ratione et quidem nostrum qui!</p>
          </div>
-         <div class="seconft">
+         <div class="seconft mr-3">
            <h3 style="margin-bottom:20px;">Shop Info</h3>
            <div class="ft2">
              <p class="adress">Address </p>
@@ -323,7 +364,7 @@
              <p style="color:#ff8d2f;"> Mon - Fri (9am - 6pm)</p>
            </div>
          </div>
-         <div class="thedft d-none d-lg-block">
+         <div class="thedft d-none d-lg-block ">
            <h3 style="margin-bottom:20px;">Services</h3>
             <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Laptop Repair</p>
             <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> iPhone Repair</p>
