@@ -35,7 +35,7 @@
 <body>
 
   <div class="upbannerwrap d-none d-lg-block">
-    <div class="upbanner">
+    <div class="upbanner container">
       <img src="img/logoimg.png" alt="" class="toplogoimg">
       <div class="iconline">
         <img src="img/home.svg" alt="">
@@ -57,8 +57,8 @@
   </div>
 
   <div class="navwrap bg-dark">
-    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand d-sm-none ml-3" href="#!"><img src="img/logoimg.png" alt=""></a>
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <a class="navbar-brand d-lg-none ml-3" href="#!"><img src="img/logoimg.png" alt=""></a>
       <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbartoggler" aria-controls="navbartoggler" aria-expended="false" >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -231,10 +231,9 @@
     </div>
   </div>
 
-  <div class="formwrap">
-    <img src="img/app.svg" alt="">
-
-    <form>
+  <div class="container mb-5 mt-5">
+    <img src="img/app.svg" alt="" class="img-fluid col-12 col-lg-6 mb-3 mb-lg-5 mt-5">
+    <form class="col-12 col-lg-6 order-lg-2 mb-3">
       <h2>REQUEST FREE QUOTE</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis cumque consectetur soluta at nihil.</p>
       <div class="form-group">
@@ -245,7 +244,7 @@
         <label for="formGroupExampleInput"></label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Phone">
       </div>
-      <div class="form-group">
+      <div class="form-group mb-5">
         <label for="formGroupExampleInput"></label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Message Here...">
       </div>
@@ -253,37 +252,35 @@
     </form>
   </div>
 
-  <div class="gallerywrap">
+  <div class="container text-center gallerywrap mb-5 mt-3">
     <h1>Our Repair Gallery</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci pariatur id quasi dolor dolorum! Quam, assumenda inventore provident laboriosam molestias.</p>
-    <p class="lastp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nesciunt!</p>
-    <div class="gallwrap">
-      <div class="boxwrap" style="margin-top:30px;">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-      </div>
-      <div class="boxwrap">
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-      </div>
-    </div>
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci pariatur id quasi dolor dolorum! Quam, assumenda inventore provident laboriosam molestias.</p>
+    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nesciunt!</p>
+
+        <div class="row mr-1 ml-1">
+          <img src="img/gall1.jpg" alt="" class="box1 img-fluid col-3 pr-1 pl-0 mb-2">
+          <img src="img/gall2.jpg" alt="" class="box2 img-fluid col-3 pr-1 pl-1 mb-2">
+          <img src="img/gall3.jpg" alt="" class="box3 img-fluid col-6 pr-0 pl-1 mb-2">
+
+          <img src="img/gall4.jpg" alt="" class="box4 img-fluid col-6 pr-1 pl-0">
+          <img src="img/gall5.jpg" alt="" class="box5 img-fluid col-3 pr-1 pl-1">
+          <img src="img/gall6.jpg" alt="" class="box6 img-fluid col-3 pr-0 pl-1">
+        </div>
   </div>
 
-  <div class="freewrap">
+  <div class="container freewrap">
     <h1 style="text-align:center;">Free Repair Guide</h1>
     <p style="text-align:center;color:#747474;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minima ea adipisci hic, eligendi est.</p>
     <div class="row cardwrap2 col-md-10 offset-md-1">
-      <div class="card" style="border:0 none;">
-        <img src="img/card1.jpg" alt="" class="card-img-top">
+      <div class="card col-12 col-lg-4" style="border:0 none;">
+        <img src="img/card1.jpg" alt="" class="card-img-top  m-0-auto">
         <div class="card-body">
           <p class="cardbox">January 27, 2017</p>
           <h5 class="card-title">Repair your Samsung When it's not working correctly</h5>
           <p class="card-text" style="color:#747474;"><i class="far fa-edit"></i> Repair Guide One | <i class="far fa-comments"></i> 0 comment </p>
         </div>
       </div>
-      <div class="card" style="border:0 none;">
+      <div class="card col-12 col-lg-4" style="border:0 none;">
         <img src="img/card2.jpg" alt="" class="card-img-top">
         <div class="card-body">
           <p class="cardbox">January 27, 2017</p>
@@ -291,7 +288,7 @@
           <p class="card-text" style="color:#747474;"><i class="far fa-edit"></i> Blog Whit Both Bar | <i class="far fa-comments"></i> 0 comment</p>
         </div>
       </div>
-      <div class="card" style="border:0 none;">
+      <div class="card col-12 col-lg-4" style="border:0 none;">
         <img src="img/gall6.jpg" alt="" class="card-img-top">
         <div class="card-body">
           <p class="cardbox">January 27, 2017</p>
@@ -304,55 +301,57 @@
   </div>
 
  <div class="footerupwrap">
-   <div class="footerwrap">
-     <div class="footer col-md-10 offset-md-1">
-       <div class="firstft">
-         <img src="img/logoimg.png" alt="">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, itaque officia eius enim facilis modi eaque unde explicabo aliquam commodi consequuntur earum hic amet id ratione et quidem nostrum qui!</p>
-       </div>
-       <div class="seconft">
-         <h3 style="margin-bottom:20px;">Shop Info</h3>
-         <div class="ft2">
-           <p class="adress">Address </p>
-           <p style="color:#ff8d2f;"> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+   <div class="footerwrap container">
+     <div class="row">
+       <div class="footer col-12 col-md-10 offset-md-1">
+         <div class="firstft d-flex d-lg-block justify-content-center align-items-center">
+           <img src="img/logoimg.png" alt="" class="ml-lg-5">
+           <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, itaque officia eius enim facilis modi eaque unde explicabo aliquam commodi consequuntur earum hic amet id ratione et quidem nostrum qui!</p>
          </div>
-         <div class="ft2">
-           <p style="float:left; margin-right:10px;">Phone: <br>Email: </p>
-           <p style="color:#ff8d2f;">(+1)755-650-5212 <br> info@loremlorem.com</p>
+         <div class="seconft">
+           <h3 style="margin-bottom:20px;">Shop Info</h3>
+           <div class="ft2">
+             <p class="adress">Address </p>
+             <p style="color:#ff8d2f;"> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+           </div>
+           <div class="ft2">
+             <p style="float:left; margin-right:10px;">Phone: <br>Email: </p>
+             <p style="color:#ff8d2f;">(+1)755-650-5212 <br> info@loremlorem.com</p>
+           </div>
+           <div class="ft3">
+             <p  style="float:left;margin-right:10px;">Hours: </p>
+             <p style="color:#ff8d2f;"> Mon - Fri (9am - 6pm)</p>
+           </div>
          </div>
-         <div class="ft3">
-           <p  style="float:left;margin-right:10px;">Hours: </p>
-           <p style="color:#ff8d2f;"> Mon - Fri (9am - 6pm)</p>
+         <div class="thedft d-none d-lg-block">
+           <h3 style="margin-bottom:20px;">Services</h3>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Laptop Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> iPhone Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> iPad Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Tablet Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> SmartPhone Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Gadget Repair</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Recover Data</p>
+            <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Backup Data</p>
          </div>
-       </div>
-       <div class="thedft">
-         <h3 style="margin-bottom:20px;">Services</h3>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Laptop Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> iPhone Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> iPad Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Tablet Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> SmartPhone Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Gadget Repair</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Recover Data</p>
-          <p><i class="fas fa-long-arrow-alt-right" style="margin-right:10px;"></i> Backup Data</p>
-       </div>
-       <div class="fourft">
-         <h3 style="margin-bottom:20px;">Newsletter</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, nulla.</p>
-         <form>
-           <input type="email" class="form-control" id="inputemail" placeholder="Email">
-           <button type="button" class="btn btn-warning"><i class="fas fa-chevron-right"></i></button>
-         </form>
+         <div class="fourft d-none d-lg-block">
+           <h3 style="margin-bottom:20px;">Newsletter</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, nulla.</p>
+           <form>
+             <input type="email" class="form-control" id="inputemail" placeholder="Email">
+             <button type="button" class="btn btn-warning"><i class="fas fa-chevron-right"></i></button>
+           </form>
+         </div>
        </div>
      </div>
    </div>
  </div>
 
  <div class="footerdwnwrap">
-   <div class="footerdwrap">
+   <div class="footerdwrap container">
      <div class="footerdwn  col-md-10 offset-md-1">
        <p>Copyright@2017 All right reserved by <span>computerRepair.com</span></p>
-       <ul>
+       <ul class="clearfix d-none d-xl-block">
          <li>home<div class="dot"></div></li>
          <li>About<div class="dot"></div></li>
          <li>Service<div class="dot"></div></li>
