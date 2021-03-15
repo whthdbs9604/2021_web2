@@ -2,8 +2,9 @@
 
 
 
-.slideron{position: relative;height: 1000px;}
+.slideron{position: relative;height: 870px;}
 .navbar{z-index:2;position: absolute;}
+.blank{margin-bottom:60px;}
 .sliderwrap{position: absolute;top:-69px;z-index:1;min-width:576px;text-align: center;}
 .container.maincon{padding:0 !important; z-index:;}
 .slider .slider1st{background:url(../img/main.jpg) no-repeat center;min-height: 800px;display: flex;justify-content: center;align-items: center;background-size: cover;}
@@ -25,7 +26,7 @@
       margin-bottom:0 !important;}
 
 .cardwrap{display:flex;position: absolute;bottom:-30px;text-align: center;}
-.cardwrap .card{width: 370px;box-shadow:10px 10px 15px rgba(134, 134, 134, 0.5);z-index:3;}
+.cardwrap .card{width: 370px;box-shadow:10px 10px 15px rgba(134, 134, 134, 0.5);z-index:3;border: 0px none;}
 .cardwrap .card:after{display: block;content:"";border: 3px solid #ffb34f;}
 .cardwrap .card .fa-hand-holding-heart,.cardwrap .card .fa-hands,.cardwrap .card .fa-donate{margin: 0 auto;width: 60px;height: 60px;margin-top:20px;color: #ffb34f;}
 .card-body h4{font-weight:bold;color: #003675;}
@@ -75,7 +76,7 @@
 .footer{background: #012147;color: white;height: 80px;}
 .footer img{width: 130px;height: 38px;margin-top:20px;}
 .footer .footerlogo{width: 380px;}
-.footer .emailbox{display:flex;height:80px;width: 380px;justify-content: space-around;line-height: 80px;position: relative;}
+.footer .emailbox{display:flex !important;height:80px;width: 380px;justify-content: space-around;line-height: 80px;position: relative;}
 .footer .emailbox:after{content:"";display: block;width: 1px;height: 80px;background:white;position: absolute;right:0;}
 .footer .emailbox:before{content:"";display: block;width: 1px;height: 80px;background:white;position: absolute;left:0;}
 .footer .sns{height:80px;width: 380px;text-align: right;line-height:80px;}

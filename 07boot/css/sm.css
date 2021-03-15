@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .navbar{z-index:2;position: absolute;}
-.blank{width: 100%;height: 600px;margin-bottom:100px;background: url(../img/main.jpg) no-repeat center;background-size: cover;color: white;padding:50px 120px;text-align: center;}
+.blank{width: 100%;height: 600px;margin-bottom:60px;background: url(../img/main.jpg) no-repeat center;background-size: cover;color: white;padding:140px 30px 0 30px;text-align: center;}
 
 .container.maincon{padding:0 !important; z-index:;}
 .mainwrap .logoimg{width: 130px;}
@@ -22,7 +22,7 @@
 
 .cardwrap{display:flex;position: absolute;bottom:-30px;text-align: center;}
 .card-body{font-size:0.8em;}
-.cardwrap .card{width: 240px;box-shadow:10px 10px 15px rgba(134, 134, 134, 0.5);z-index:3;}
+.cardwrap .card{width: 240px;box-shadow:10px 10px 15px rgba(134, 134, 134, 0.5);z-index:3;border: 0px none;}
 .cardwrap .card:after{display: block;content:"";border: 3px solid #ffb34f;}
 .cardwrap .card .fa-hand-holding-heart,.cardwrap .card .fa-hands,.cardwrap .card .fa-donate{margin: 0 auto;width: 40px;height: 60px;margin-top:20px;color: #ffb34f;}
 .card-body h4{font-weight:bold;color: #003675;font-size:1.2em;}
@@ -31,12 +31,12 @@
 .textline h2{font-weight:bold;color: #003675;margin-bottom:20px;}
 .textline button{background: #ffb34f;width: 160px;height: 50px;margin-top:20px;font-weight: bold;color: white;}
 
-.blueboxwrap{height: 820px;background: #012147;color: white;}
+.blueboxwrap{height: 860px;background: #012147;color: white;}
 
 .grape{position: relative;display:flex;justify-content: space-between;text-align: center;}
 .grape span{font-size:2em; font-weight:bold;color: #ffb34f;}
 .grape .card img{width:150px;margin:20px 0 20px 50px;}
-.grape .card{background: transparent;border: 0px none;}
+.grape .card{background: rgba(255,255,255,0.2);border: 0px none;}
 .grape .card-body button{width: 160px;margin-top:10px;}
 .history{overflow: hidden;padding:0 15px ;}
 .history .hisimg{position: relative;}
@@ -61,9 +61,9 @@
 .imgsec .img4text .fa-bullseye{color: #ffb34f; margin-right:15px;}
 .imgsec .img4text h3{font-weight:bold;color: #003675; margin-bottom:30px;margin-top:35px;}
 
-.newssec{text-align: center;background: #f1f1f1;height:700px;}
+.newssec{text-align: center;background: #f1f1f1;height:880px;}
 .newssec h2{color: #003675;padding:30px 0;font-weight: bold;}
-.newssec .newsimg{float: left;width: 470px;height: 350px;position: relative;}
+.newssec .newsimg{float: left;width: 450px;height: 350px;position: relative;}
 .newssec .newsimg.oneimg{background: url(../img/desert-1913130_1280.jpg) no-repeat center;background-size: cover;margin-bottom:20px;}
 .newssec .newsimg.twoimg{background: url(../img/panorama-2105955_1920.jpg) no-repeat center;background-size: cover;}
 .newssec .newsimg .card{width: 400px;border: 0px none;position: absolute;bottom:10px;left:40px;background-color:rgba(255,255,255,0.5);}
@@ -71,10 +71,11 @@
 .newssec .newsimg .card-body button{width: 150px;height: 45px;}
 
 .footer{background: #012147;color: white;height: 80px;}
+.footer .container{height: 80px;}
 .footer img{width: 130px;height: 38px;margin-top:20px;}
-.footer .footerlogo{width: 380px;}
+.footer .footerlogo{}
 .footer .emailbox{display:flex;height:80px;width: 380px;justify-content: space-around;line-height: 80px;position: relative;}
 .footer .emailbox:after{content:"";display: block;width: 1px;height: 80px;background:white;position: absolute;right:0;}
 .footer .emailbox:before{content:"";display: block;width: 1px;height: 80px;background:white;position: absolute;left:0;}
-.footer .sns{height:80px;width: 380px;text-align: right;line-height:80px;}
-.footer .row{display: flex;justify-content:space-between;}
+.footer .sns{height:80px;text-align: right;line-height:80px;}
+.footer .row{height: 80px; display: flex; justify-content: space-around;}
