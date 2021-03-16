@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
    	<script src="js/jquery.fullpage.js"></script>
    	<script src="js/fullpage.js"></script>
@@ -17,6 +19,12 @@
 			menu:"#topMenu" , //메뉴지정
 			anchors:["m1st","m2st","m3st","m4st"] ,//이동지정
 			navigation:true
+			});
+
+			$(".movie .btn").colorbox({
+				iframe:true,
+				innerWidth:700,
+				innerHeight:393.75
 			});
 		});
 
@@ -47,6 +55,19 @@
 			<img src="images/candy9.png" alt="" class="lolipop">
 		</div>
 		<div class="section page2" data-anchors="m2st">
+			<div class="pbox"></div>
+			<div class="movie">
+				<a href="https://www.youtube.com/embed/ZrDcXzVXreg" class="btn">
+					<img src="images/icon02.png" alt="">
+				</a>
+			</div>
+			<img src="images/tin.png" alt="" class="tinimg">
+			<img src="images/sprinkle.png" alt="" class="sprinkle">
+			<div class="textbox">
+				<h3 class="box" style="margin-bottom:10px;">FEBRUARY 14TH</h3>
+				<h2>MUSICAL TIN EVENT <br>뮤지컬틴 1+1 행운을 찾아라!</h2>
+				<h3 style="margin-top:15px;">뮤지컬틴을 사면 하나 더? <br>뮤지컬틴 1+1 쿠폰이 랜덤으로 들어있어요!</h3>
+			</div>
 		</div>
 		<div class="section page3" data-anchors="m3st"></div>
 		<div class="section page4" data-anchors="m4st"></div>
