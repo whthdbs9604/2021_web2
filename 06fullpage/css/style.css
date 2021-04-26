@@ -67,7 +67,7 @@
 @keyframes candy4{
      0%{transform:rotate(0deg)}50%{transform:rotate(30deg)} 100%{transform:rotate(0deg)}}
 
-.candy.e{width: 130px; position: absolute;left:720px;top:160px;z-index:2;
+.candy.e{width: 130px; position: absolute;left:720px;top:70px;z-index:2;
     animation-name:candy5;
     animation-duration:3s;
     animation-fill-mode:forwards;
@@ -130,4 +130,11 @@
 /* 1page animation end */
 
 
-.page2 img{width: 500px;}
+.page2 img{width: 500px;position: relative;}
+.page2 .pbox{width: 100%;height: 600px;background: #f1bccc;position: absolute;bottom:150px;}
+.page2 .tinimg{position: absolute;right:200px;width: 600px;bottom: 150px;z-index:3;}
+.page2 .pbox:hover .btn img{display: block;}
+.page2 .sprinkle{position: absolute;right:320px;bottom: 30px;z-index: 2;}
+.page2 .textbox{z-index:1;position: absolute;color: #ffffff;left: 200px;font-size:1.6em;bottom:320px;}
+.page2 .textbox .box{border: 2px solid #ffffff;width: 280px;height: 60px;text-align: center;line-height:60px;border-radius:30px;}
+.page2 .btn img{width: 100px;position: absolute;right:465px;z-index:4;}
