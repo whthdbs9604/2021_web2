@@ -2,9 +2,22 @@
 
 /* header */
 .shadow{position:absolute;width:auto;height:400px;}
-.slide{height:750px;background:#f8f6f0;}
+.slide{height:750px;background:#f8f6f0;margin-bottom: 100px;}
 
 /* sec2 */
+.sec2{width:1180px;height:1021px;margin:0 auto;position: relative;margin-bottom:150px;}
+.breadimg ul{float: left;}
+.breadimg ul li{background:pink;}
+
+.bimg1{width: 580px;height: 430px;margin-right:20px;margin-bottom:20px;}
+.bimg2{width: 580px;height: 285px;margin-right:20px;margin-bottom:20px;}
+.bimg3{width: 280px;height: 265px;margin-right:20px;float: left;}
+.bimg4{width: 280px;height: 265px;margin-right:20px;float: left;}
+
+.bimg5{width: 280px;height: 265px;margin-right:20px;margin-bottom:20px;float: left;}
+.bimg6{width: 280px;height: 265px;margin-bottom:20px;float: left;}
+.bimg7{width: 580px;height: 285px;margin-bottom:20px;margin-top: 285px;}
+.bimg8{width: 580px;height: 430px;}
 
 /* sec3 */
 
