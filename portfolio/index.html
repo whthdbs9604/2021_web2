@@ -8,9 +8,26 @@
 
   <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        items:4
+      });
+    });
+
+  </script>
 
 </head>
 <body>
@@ -39,6 +56,7 @@
         <li class="bimg2"></li>
         <li class="bimg3"></li>
         <li class="bimg4"></li>
+
       </ul>
 
       <ul class="bimgsec2">
@@ -52,9 +70,42 @@
   </div>
 
   <div class="sec3">
-    <div class="sectitle"></div>
-    <div class="bestimg1"></div>
-    <div class="bestimg2"></div>
+
+    <div class="sectitle">
+      <div class="sec3bt1"></div>
+      <div class="sec3bt2"></div>
+    </div>
+
+      <div class="owl-carousel">
+        <div class="box"><div class="item"><a href="#"><img src="img/유자 파이.png" alt=""></a><h4>가격정산</h4></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/팥빵2.png" alt=""></a></div></div>
+        <div class="box"><div class="item hbread"><a href="#"><img src="img/현미 식빵.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/쌀 롤빵.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/레몬 파운드.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/나비 파이.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/초콜렛 케이크.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/크로아상.png" alt=""></a></div></div>
+      </div>
+
+      <div class="owl-carousel">
+        <div class="box"><div class="item"><a href="#"><img src="img/레몬 파운드.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/나비 파이.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/초콜렛 케이크.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/크로아상.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/유자 파이.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/팥빵2.png" alt=""></a></div></div>
+        <div class="box"><div class="item hbread"><a href="#"><img src="img/현미 식빵.png" alt=""></a></div></div>
+        <div class="box"><div class="item"><a href="#"><img src="img/쌀 롤빵.png" alt=""></a></div></div>
+      </div>
+
+    <!-- <div class="bestimg2">
+      <ul>
+        <li class="bstimg5"></li>
+        <li class="bstimg6"></li>
+        <li class="bstimg7"></li>
+        <li class="bstimg8"></li>
+      </ul>
+    </div> -->
   </div>
 
   <div class="sec4">
