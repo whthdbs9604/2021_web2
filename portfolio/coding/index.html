@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+
+				pager:false,
+				auto:true
+			});
+		});
+
+		$(document).ready(function(){
+			$(".subcontent div").hide().eq(0).show();
+			$(".chwrap li").click(function(){
+				var i = $(this).index();
+				$(".subcontent .munu").hide().eq(i).show();
+				return false;
+			});
+
+			$(".chwrap li,.chwrap ul li").click(function(){
+				var num = $(this).index();
+				$(".chwrap ul li,.chwrap ul li a").removeClass();
+				$(this).addClass("active");
+				$(".chwrap ul li a").eq(num).addClass("fontcolor");
+				
+				
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+	<header id="header">
+		
+		<div class="slidewrap">
+			<div class="logo"><img src="img/logo.png" alt=""></div>
+			<ul class="slider">
+
+				<li class="slide"><img src="img/roof.png" alt="#"><p>건강과 생활의 조화를 추구하는<br>프리미엄 멤버쉽 플랫폼</p></li>
+				<li class="slide"><img src="img/roof.png" alt="#"><p>건강과 생활의 조화를 추구하는<br>프리미엄 멤버쉽 플랫폼</p></li>
+				<li class="slide"><img src="img/roof.png" alt="#"><p>건강과 생활의 조화를 추구하는<br>프리미엄 멤버쉽 플랫폼</p></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="memberbox">
+
+		<a href="#"><img src="img/up-arrow.png" alt="화살표"></a>
+
+		<div class="mbtext">
+			<div class="mbwrap">
+				<h4>토마토 님</h4>
+				<h4>100,000 P</h4>	
+			</div>			
+		</div>
+		<div class="mbbtn">
+			<div class="mbbtnwrap">
+				<div><h4>친구 초대</h4></div>
+				<div><h4>포인트 충전</h4></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="middlebox">
+
+		<div class="change">
+			<div class="chwrap">
+				<ul>
+					<li class="active"><a href="#" class="fontcolor">Membership</a></li>
+					<li><a href="#">Premium</a></li>
+					<li><a href="#">Service</a></li>
+				</ul>				
+			</div>				
+		</div>
+
+		<div class="contents">
+			<div class="subcontent">
+				<div class="menu1 munu">
+
+					<a href="#"><img src="img/centerimg1.png" alt=""></a>
+					<a href="#"><img src="img/centerimg2.png" alt=""></a>
+					<a href="#"><img src="img/centerimg3.png" alt=""></a>
+
+				</div>
+
+				<div class="menu2 munu">
+					<div class="iconwrap flex">
+						<div class="fstline flex">
+							<div class="iconbox flex">
+								<a href=""><img src="img/car.png" alt=""><h4>카 쉐어링</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/abacus.png" alt=""><h4>세무회계</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/balance.png" alt=""><h4>생활법률</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/smartphone.png" alt=""><h4>휴대폰</h4></a>
+							</div>
+						</div>
+						<div class="sndline flex">
+							<div class="iconbox flex">
+							<a href=""><img src="img/hospital-bed.png" alt=""><h4>보험</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/globe.png" alt=""><h4>loT/TV</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/wi-fi.png" alt=""><h4>인터넷</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/signal.png" alt=""><h4>보안</h4></a>
+							</div>
+						</div>						
+						<div class="tedline flex">
+							<div class="iconbox flex">
+							<a href=""><img src="img/click.png" alt=""><h4>라이프/일상</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/stethoscope2.png" alt=""><h4>건강/헬스</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/ribbon.png" alt=""><h4>상조</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/folder.png" alt=""><h4>매장관리</h4></a>
+							</div>
+						</div>												
+					</div>			
+				</div>
+
+				<div class="menu3 munu">
+					<div class="iconwrap flex">
+						<div class="fstline flex">
+							<div class="iconbox flex">
+								<a href=""><img src="img/plane.png" alt=""><h4>해외여행</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/add-to-cart.png" alt=""><h4>숙박&여행</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/trampoline.png" alt=""><h4>레저</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/palm.png" alt=""><h4>제주골프</h4></a>
+							</div>
+						</div>
+						<div class="sndline flex">
+							<div class="iconbox flex">
+							<a href=""><img src="img/medical-record.png" alt=""><h4>의료</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/abacus.png" alt=""><h4>렌탈</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/camera.png" alt=""><h4>사진</h4></a>
+							</div>
+							<div class="iconbox flex">
+								<a href=""><img src="img/truck.png" alt=""><h4>이사</h4></a>
+							</div>
+						</div>						
+						<div class="tedline flex">
+							<div class="iconbox flex">
+							<a href=""><img src="img/mace.png" alt=""><h4>법률</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/viber.png" alt=""><h4>M 다이렉트</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/manager.png" alt=""><h4>상조</h4></a>
+							</div>
+							<div class="iconbox flex">
+							<a href=""><img src="img/geography.png" alt=""><h4>예약조회</h4></a>
+							</div>
+						</div>												
+					</div>	
+				</div>
+
+			</div>
+		</div>
+
+		<div class="noticebox">
+			<div class="notice">
+				<h4>Notice</h4>				
+				<li class="ntbox"><p>2021 7월 가토 플랫폼 프리미엄 서비스 오픈예정</p></li>
+			</div>
+		</div>
+	</div>
+		
+	<div class="menubar">
+		<div class="mnbarwrap">
+			<a href="#"><img src="img/menu2.png" alt="홈메뉴"></a>
+			<a href="#"><img src="img/add-folder.png" alt="마이페이지"></a>
+			<a href="#"><img src="img/log-in.png" alt="로그인"></a>
+		</div>
+	</div>
+</body>
+</html>
